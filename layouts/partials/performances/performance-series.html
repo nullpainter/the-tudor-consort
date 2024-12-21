@@ -23,7 +23,7 @@
                 {{/* Render the image if present, otherwise display a generic spacer */}}
                 {{ $image := .Resources.GetMatch "hero.jpg" }}
                 {{ if $image }}
-                {{ $image := $image.Process "fit 600x400 top" }}
+                {{ $image := $image.Process "fill 600x400 center" }}
                 {{ with $image }}
                 <figure class="m-0">
                     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
