@@ -1,0 +1,43 @@
+{{ $concertPages := sort .Pages "Params.concertDate" }}
+
+{{/* Calculate the start of the next year */}}
+{{ $nextYear := now.AddDate 1 0 0 }}
+{{ $nextYear := time (printf "%d-01-01T00:00:00Z" $nextYear.Year) }}
+
+{{ $performanceSeries := where $concertPages "Params.concertDate" "gt" $nextYear }}
+
+
+<div class="grid grid-cols-2 gap-4">
+
+    {{ range $performanceSeries }}
+
+    <a href="{{ .Permalink }}" class="no-underline">
+        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
+            <div class="card-content flex-grow">
+                <h2 class="card-title mb-0 font-extrabold">{{ .Title }}</h2>
+                <span class="text-gray-400 leading-5">{{ .Params.subtitle }}&nbsp;</span>
+                <h4 class="mt-2 mb-3">{{ .Params.concertDate | dateFormat "January 2, 2006" }}</h4>
+            </div>
+            <div class="figure-container">
+
+                {{/* Render the image if present, otherwise display a generic spacer */}}
+                {{ $image := .Resources.GetMatch "hero.jpg" }}
+                {{ if $image }}
+                {{ $image := $image.Process "fit 600x400 top" }}
+                {{ with $image }}
+                <figure class="m-0">
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+                </figure>
+                {{ end }}
+                {{ else }}
+                <figure class="m-0">
+                    <div class="rounded-md bg-slate-950" style="width:600px; height:400px"></div>
+                </figure>
+                {{ end }}
+
+            </div>
+            {{ .Summary }}
+        </div>
+    </a>
+    {{ end }}
+</div>

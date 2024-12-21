@@ -1,0 +1,18 @@
+---
+title: 'About'
+menu:
+  main:
+    weight: 10
+---
+
+The Tudor Consort is a specialist early choral group based in Wellington, New Zealand. It is made up of the region’s finest choral singers, and depending on repertoire can range in size from 5 to 25 members. The group was formed in 1986 by Simon Ravens with the intention of performing lesser-known choral music from the late Medieval and Renaissance periods, laying special emphasis on English sixteenth century music. The repertoire performed by the Consort made it, in the words of the local media of the time, “a unique group in New Zealand”.  
+
+Authentic performance practice is a major aim of The Tudor Consort, and consideration of ensemble size, pronunciation, pitch, vocal style and ornamentation feature strongly in the work of the group. Under Simon Ravens the group often performed original editions, reflecting Simon’s own study in Britain under David Wulstan. The early success of the choir was largely attributable to Simon’s own professionalism and exacting standards. Simon, with The Tudor Consort, pioneered the use of liturgical reconstruction as a method of presenting early sacred music. Media and critical reaction was immediate and overwhelmingly positive.  
+
+Succeeding directors substantially expanded on the group’s repertoire base to the excitement of the local musical community. Internationally recognised baroque specialist Professor Peter Walls directed performances of early 17th-century Venetian vespers and masses, music for the coronation of James II, Mozart orchestral masses, Bach and Buxtehude cantatas, Purcell and Handel anthems, many performed in conjunction with period instrument ensemble The Baroque Players. The group also staged performances of Purcell’s Dido and Aeneas and Blow’s Venus and Adonis. These performances received high critical praise. Peter also directed the choir in its first commercial recording of Peter Philips motets for the Naxos label. Peter’s successor Ivan Patterson introduced repertoire from the 19th and 20th centuries; under Ivan’s direction the group also explored the medieval period in more detail, particularly focusing on works by women composers of the period.  
+
+Alastair Carey became Director and Cantor in 2001. Alastair’s expertise lay in vocal production, choral blend and the repertoire of the Renaissance, particularly the sacred choral music of the English school and the Recusants. Under Alastair’s guidance the group toured overseas and claimed silver and bronze awards at the prestigious 35th International Choral Competition in Tolosa, Spain in 2003, and again at the 37th International Choral Competition two years later.  
+
+Current Music Director Michael Stewart has sought to bring his passion for 20th Century choral music to The Tudor Consort, as well as exploring the works of the early Tudor composers. Described by Garth Wilshere in The Capital Times as "surely the best young choral conductor in Wellington, and arguably New Zealand", Michael has taken the choir from strength to strength. Highlights include critically acclaimed performances of Handel's Messiah in 2008 and JS Bach's Christmas Oratorio in 2010, both in collaboration with the Vector Wellington Orchestra. Lindis Taylor in The Dominion Post praised Stewart's "stylish energy, obtaining a performance that was lively, admirably balanced and cleanly articulated.”
+
+As a result of this continuing evolution The Tudor Consort continues to be admired both locally and nationally as one of New Zealand’s finest and most innovative early choral ensembles.

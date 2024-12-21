@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.next-performance {
+    font-size: 180%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.figure-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.figure-container figure {
+    margin: 0;
+}

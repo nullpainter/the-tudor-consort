@@ -1,0 +1,16 @@
+baseURL = "http://localhost:8080"
+languageCode = "en-us"
+title = "The Tudor Consort"
+
+# Allow HTML in Markdown
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[[build.cachebusters]]
+source = 'layouts/.*'
+target = 'scss'
+
+[outputFormats]
+[outputFormats.html]
+
+# Allow raw HTML strings for images
+isPlainText = true

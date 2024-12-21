@@ -1,0 +1,45 @@
+{{ $concertPages := sort .Pages "Params.concertDate" "desc" }}
+{{ $nearestFuturePage := first 1 $concertPages }}
+
+{{ $pastPages := where $concertPages "Params.concertDate" "lt" now }}
+{{ $groupedByYear := $pastPages.GroupByParamDate "concertDate" "2006" }}
+
+{{/* Display performances by year */}}
+{{ range $groupedByYear }}
+
+{{/* Render the year */}}
+<h2 class="mb-2">{{ .Key }}</h2>
+
+<div class="grid grid-cols-3 gap-4">
+
+    {{/* Render each concert for the current year */}}
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="no-underline">
+        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
+            <div class="card-content flex-grow">
+                <h2 class="card-title mb-0 font-extrabold">{{ .Title }}</h2>
+                <span class="text-gray-400 leading-5">{{ .Params.subtitle }}&nbsp;</span>
+                <h4 class="mt-2 mb-3">{{ .Params.concertDate | dateFormat "January 2, 2006" }}</h4>
+            </div>
+            <div class="figure-container">
+
+                {{/* Render the image if present, otherwise display a generic spacer */}}
+                {{ $image := .Resources.GetMatch "hero.jpg" }}
+                {{ if $image }}
+                {{ $image := $image.Process "fill 288x192" }}
+                {{ with $image }}
+                <figure class="m-0">
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+                </figure>
+                {{ end }}
+                {{ else }}
+                <figure class="m-0">
+                    <div class="rounded-md bg-slate-950" style="width:288px; height:192px"></div>
+                </figure>
+                {{ end }}
+            </div>
+        </div>
+    </a>
+    {{ end }}
+</div>
+{{ end }}

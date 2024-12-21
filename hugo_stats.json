@@ -1,0 +1,29 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "br",
+      "footer",
+      "h1",
+      "head",
+      "header",
+      "hr",
+      "html",
+      "li",
+      "link",
+      "main",
+      "meta",
+      "nav",
+      "p",
+      "script",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "bg-red-300",
+      "w-full"
+    ],
+    "ids": null
+  }
+}

@@ -1,0 +1,14 @@
+<header class="m-6 flex justify-between items-center">
+    <a href="/">
+        <img src="/images/tc-logo.svg" alt="The Tudor Consort" class="w-14">
+    </a>
+
+    <nav>
+        <ul class="menu menu-horizontal font-bold text-base">
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+
+    </nav>
+</header>
