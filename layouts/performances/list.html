@@ -1,20 +1,5 @@
 {{ define "main" }}
 
-
-<h1>Next performance</h1>
-
-{{ partial "performances/next-performance" . }}
-
-
-{{ $nextYear := (now.AddDate 1 0 0).Format "2006" }}
-<h1 class="mt-8">{{ $nextYear }} performance series</h1>
-
-<section class="mb-10">
-    {{ partial "performances/performance-series" . }}
-</section>
-
-<h1>Past performances</h1>
-
 <section class="mb-5">
     {{ partial "performances/past-performances" . }}
 </section>
