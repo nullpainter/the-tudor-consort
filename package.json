@@ -16,9 +16,7 @@
   "dependencies": {
     "daisyui": "^4.12.22"
   },
-  {
-    "scripts": {
-      "build": "hugo"
-    }
+  "scripts": {
+    "build": "hugo"
   }
 }
