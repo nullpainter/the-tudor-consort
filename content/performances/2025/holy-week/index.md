@@ -1,9 +1,15 @@
 +++
 title = "Holy Week"
 director = "Michael Stewart"
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor."
-concertDate = 2025-04-18
-concertTime = "7:30pm"
+summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu libero a quam fringilla vestibulum at non enim. Phasellus turpis est, lobortis eget rhoncus non, ullamcorper nec nisi."
+performanceDate = 2025-04-18
+performanceTime = "7:30pm, pre-concert talk 7pm"
+venue = """
+Wellington Cathedral of St Paul  
+Hill Street, Wellington
+"""
+ticketPrices = "$30 / $20 / school children free"
+ticketUrl = "https://humanitix.co.nz"
 +++
 
 

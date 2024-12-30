@@ -2,8 +2,8 @@
 title = "The Tudor Consort with lutenist William Bower"
 director = "Simon Ravens"
 teaser = "*Concerto for Two Cellos and Piano*: Vivaldi   i. Allegro     ii. Adagio     iii. Allegro*Pastime with Good Company*: Henry VIII  *Adieu My Heart's Lust*: William Cornish*L'Ultimo di Maggio*: Festa  *Il Bianco e Dolce Cigno*: Arcadelt  *Matona Mia Cara*: Orlando di Lassus*Tastar de Corde and Piva*: Dalza  *Corrente: La Sue Spezzata*: Gioncelli"
-concertDate = 1989-08-15
-concertTime = "performance time unknown"
+performanceDate = 1989-08-15
+performanceTime = "performance time unknown"
 +++
 
 *Concerto for Two Cellos and Piano*: Vivaldi

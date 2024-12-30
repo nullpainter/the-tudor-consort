@@ -1,8 +1,8 @@
 +++
 title = "Christmas Oratorio: Heinrich Schütz / Messe de Minuit: Marc-Antoine Charpentier"
 teaser = "Soloists *Baroque Voices*, period instrumental ensemble *Academia Sanctae Mariae* and *The Tudor Consort* join forces for this delightful programme of Baroque Christmas music, including Schütz’s powerfully dramatic *Christmas Oratorio*."
-concertDate = 2006-12-16
-concertTime = "7.30pm"
+performanceDate = 2006-12-16
+performanceTime = "7.30pm"
 +++
 
 Soloists *Baroque Voices*, period instrumental ensemble *Academia Sanctae Mariae* and *The Tudor Consort* join forces for this delightful programme of Baroque Christmas music, including Schütz’s powerfully dramatic *Christmas Oratorio*.

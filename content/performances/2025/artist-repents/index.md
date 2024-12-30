@@ -3,8 +3,8 @@ title = "The Artist Repents"
 subTitle = "With Orchestra Wellington"
 director = "Michael Stewart"
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor."
-concertDate = 2025-10-22
-concertTime = "7:30pm"
+performanceDate = 2025-10-22
+performanceTime = "7:30pm"
 +++
 
 

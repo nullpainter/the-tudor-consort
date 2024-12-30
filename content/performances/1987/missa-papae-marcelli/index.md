@@ -2,8 +2,8 @@
 title = "Missa Papae Marcelli"
 director = "Simon Ravens"
 teaser = "During the 16th century the whole issue of music in the church was addressed by the Council of Trent, who were understandably concerned about the number of popular secular melodies which were finding their way into Mass settings of composers. The reformists were also anxious that the texts of the Mass should no longer be obscured by too much musical elaboration."
-concertDate = 1987-09-19
-concertTime = "8pm"
+performanceDate = 1987-09-19
+performanceTime = "8pm"
 subtitle = "G P da Palestrina 1525?-1594"
 +++
 

@@ -1,8 +1,8 @@
-{{ $concertPages := sort .Pages "Params.concertDate" "desc" }}
-{{ $nearestFuturePage := first 1 $concertPages }}
+{{ $performancePages := sort .Pages "Params.performanceDate" "desc" }}
+{{ $nearestFuturePage := first 1 $performancePages }}
 
-{{ $pastPages := where $concertPages "Params.concertDate" "lt" now }}
-{{ $groupedByYear := $pastPages.GroupByParamDate "concertDate" "2006" }}
+{{ $pastPages := where $performancePages "Params.performanceDate" "lt" now }}
+{{ $groupedByYear := $pastPages.GroupByParamDate "performanceDate" "2006" }}
 
 {{/* Display performances by year */}}
 {{ range $groupedByYear }}
@@ -19,14 +19,14 @@
             <div class="card-content flex-grow">
                 <h2 class="card-title mb-0 font-extrabold">{{ .Title }}</h2>
                 <span class="text-gray-400 leading-5">{{ .Params.subtitle }}&nbsp;</span>
-                <h4 class="mt-2 mb-3">{{ .Params.concertDate | dateFormat "January 2, 2006" }}</h4>
+                <h4 class="mt-2 mb-3">{{ .Params.performanceDate | dateFormat "January 2, 2006" }}</h4>
             </div>
             <div class="figure-container">
 
                 {{/* Render the image if present, otherwise display a generic spacer */}}
                 {{ $image := .Resources.GetMatch "hero.jpg" }}
                 {{ if $image }}
-                {{ $image := $image.Process "fill 288x192" }}
+                {{ $image := $image.Process "fill 288x192 smart" }}
                 {{ with $image }}
                 <figure class="m-0">
                     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">

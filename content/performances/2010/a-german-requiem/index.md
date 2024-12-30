@@ -1,8 +1,8 @@
 +++
 title = "A German Requiem"
 teaser = "Two baroque masterpieces feature in this programme which could not be more contrasting in style and dramatic perspective. Guest Conductor Matthew Leese comments, \"although both texts deal with human mortality, the audience is certain to be transported in very different ways.\""
-concertDate = 2010-09-03
-concertTime = "8pm"
+performanceDate = 2010-09-03
+performanceTime = "8pm"
 subtitle = "Schütz / D. Scarlatti"
 +++
 

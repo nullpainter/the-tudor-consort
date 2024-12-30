@@ -4,8 +4,8 @@ surTitle = "Henry Purcell’s"
 subTitle = "With The Queen's Closet"
 director = "Michael Stewart"
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor."
-concertDate = 2025-05-31
-concertTime = "7:30pm"
+performanceDate = 2025-05-31
+performanceTime = "7:30pm"
 heroImage = "dioclesian.jpg"
 +++
 

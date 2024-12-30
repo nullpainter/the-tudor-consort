@@ -1,5 +1,75 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html data-theme="black" lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 
-TODO
+<head>
+    {{ partial "head.html" . }}
+</head>
 
-{{ end }}
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    {{ $performancePages := sort site.Pages "Params.performanceDate" }}
+    {{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
+
+    {{ $nearestFuturePage := first 1 $performancePages }}
+
+    {{ range $nearestFuturePage }}
+
+    <main class="w-full home cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
+
+        <div class="relative next-performance">
+
+            <div class="absolute mt-10 ms-6">
+
+                <h5 class="mt-2 mb-2 font-normal text-primary-content">
+                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
+
+                {{ if .Params.surTitle }}
+                <h2 class="font-semibold mt-14 mb-0">{{ .Params.surTitle }}</h2>
+                {{ end }}
+
+                <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
+
+                {{ if .Params.subTitle }}
+                <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
+                {{ end }}
+
+
+                <div class="performance-summary mt-5">
+                    {{ .Summary }}
+                </div>
+
+                <a href="{{ .Params.ticketUrl }}">
+                    <button class="btn rounded-md btn-secondary mt-6">Tickets from Humanitix</button>
+                </a>
+            </div>
+
+            {{/* Hero image */}}
+            {{ $image := .Resources.GetMatch "hero.jpg" }}
+            <div class="hero-image">
+                {{ if $image }}
+
+                {{ $width := $image.Width }}
+                {{ $image := $image.Crop (printf "%dx%d smart" $width 2000) }}
+
+                {{ with $image }}
+
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                {{ end }}
+                {{ else }}
+                <figure class="m-0">
+                    <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
+                </figure>
+                {{ end }}
+            </div>
+
+        </div>
+        {{ end }}
+    </main>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+</body>
+
+</html>

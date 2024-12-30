@@ -2,8 +2,8 @@
 title = "Missa Ave Maris Stella"
 director = "Alastair Carey"
 teaser = "Josquin was the greatest composer of the early Renaissance, the most varied in invention and the most profound in expression; his peers compared his artistic abilities to those of Michelangelo. Our [2004 Season](http://tudor-consort.org.nz/subscription/2004-00-00t000000) begins with a liturgical reconstruction of his delightful four-part mass on the Latin hymn *Ave Maris Stella* in the intimate acoustic of the National War Memorial."
-concertDate = 2004-02-14
-concertTime = "7.30pm"
+performanceDate = 2004-02-14
+performanceTime = "7.30pm"
 subtitle = "Josquin des Prez 1450?-1521"
 +++
 

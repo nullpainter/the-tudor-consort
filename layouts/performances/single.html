@@ -2,7 +2,9 @@
 
 <div class="relative next-performance">
 
-    <div class="absolute mt-10 ms-6">
+    <div class="absolute mt-8 ms-8">
+        <h5 class="mt-2 mb-2 font-semibold text-primary-content performance-date">
+            {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
 
         {{ if .Params.surTitle }}
         <h2 class="font-semibold mt-14 mb-0">{{ .Params.surTitle }}</h2>
@@ -14,23 +16,42 @@
         <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
         {{ end }}
 
-        <h5 class="mt-2 mb-2 font-semibold text-primary-content">
-            {{ .Params.concertDate | dateFormat "January 2, 2006" }}, {{ .Params.concertTime }} </h5>
-        <h6 class="mt-1 text-lg">Directed by {{ .Params.director }}</h6>
+        <h5 class="mt-4 font-semibold director">Directed by {{ .Params.director }}</h5>
+
+        <div class="performance-details text-primary-content mt-10">
+            <div class="performance-time font-medium">
+                {{ .Params.performanceTime }}
+            </div>
+
+            <div class="venue mt-2">
+                {{ .Params.venue | markdownify }}
+            </div>
+
+            <div class="ticket-prices mt-4"> {{ .Params.ticketPrices }} </div>
+        </div>
+
+        <a href="{{ .Params.ticketUrl }}">
+            <button class="btn rounded-md btn-secondary mt-8">Tickets from Humanitix</button>
+        </a>
+
     </div>
 
-    {{ $image := .Resources.GetMatch "hero.jpg" }}
+    <div class="hero-image">
 
-    {{ if $image }}
-    {{ $image := $image.Process "crop 1200x620 top" }}
-    {{ with $image }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
-    {{ end }}
-    {{ else }}
-    <figure class="m-0">
-        <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
-    </figure>
-    {{ end }}
+        {{ $image := .Resources.GetMatch "hero.jpg" }}
+
+        {{ if $image }}
+        {{ $image := $image.Process "fill 1200x620 smart" }}
+        {{ with $image }}
+
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+        {{ end }}
+        {{ else }}
+        <figure class="m-0">
+            <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
+        </figure>
+        {{ end }}
+    </div>
 </div>
 
 {{.Content}}

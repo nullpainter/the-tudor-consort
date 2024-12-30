@@ -2,8 +2,8 @@
 title = "Renaissance Influences V"
 director = "Michael Stewart"
 teaser = "Claude le Jeune and Olivier Messiaen continue the ‘Renaissance Influences’ theme."
-concertDate = 2012-11-23
-concertTime = "7.30 pm"
+performanceDate = 2012-11-23
+performanceTime = "7.30 pm"
 subtitle = "Springtime"
 +++
 

@@ -2,8 +2,8 @@
 title = "Lamentatio Jeremiae Prophetae"
 director = "Michael Stewart"
 teaser = "*[The] performance was highly disciplined throughout, but never at the expense of their glorious tone, superb diction and splendour of expression.*Review of The Tudor Consort’s Palmerston North performance  Manawatu Standard, March 29 2010"
-concertDate = 2010-04-01
-concertTime = "8pm"
+performanceDate = 2010-04-01
+performanceTime = "8pm"
 subtitle = "Music for Holy Week"
 +++
 

@@ -2,8 +2,8 @@
 title = "Motets - JS Bach 1685-1750/Funeral Sentences - Henry Purcell 1659-1695"
 director = "Simon Ravens"
 teaser = "The Bach motets are some of the greatest - and most virtuosic - of all choral works, and they represent Bach at his exuberant best. In particular, the large double choir works Singet dem Herrn and Der Geist Hilf, and the four part Lobet den Herrn give the impression of being festive works written for major celebrations. But ironically the Bach motets were actually written for civic funerals whilst Bach was at Leipzig. Only in the largest of the motets, Jesu, meine Freude, is the festive spirit balanced by darker and more intense music."
-concertDate = 1990-07-21
-concertTime = "8.00pm"
+performanceDate = 1990-07-21
+performanceTime = "8.00pm"
 +++
 
 The Bach motets are some of the greatest - and most virtuosic - of all choral works, and they represent Bach at his exuberant best. In particular, the large double choir works Singet dem Herrn and Der Geist Hilf, and the four part Lobet den Herrn give the impression of being festive works written for major celebrations. But ironically the Bach motets were actually written for civic funerals whilst Bach was at Leipzig. Only in the largest of the motets, Jesu, meine Freude, is the festive spirit balanced by darker and more intense music.

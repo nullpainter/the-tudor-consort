@@ -2,8 +2,8 @@
 title = "Ancient and Modern"
 director = "Alastair Carey"
 teaser = "#### ***This Worlde’s Joie: Arnold Bax 1883-1953Angelus Domini Descendit: Giovanni Gabrieli 1558?-1613***"
-concertDate = 2005-10-21
-concertTime = "8pm"
+performanceDate = 2005-10-21
+performanceTime = "8pm"
 subtitle = "tour repertoire for Europe"
 +++
 

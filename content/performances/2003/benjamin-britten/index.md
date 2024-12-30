@@ -2,8 +2,8 @@
 title = "Benjamin Britten"
 director = "Alastair Carey"
 teaser = "#### ***Benjamin Britten 1913-1976***A very special performance of Britten's works conducted by Sir Philip Ledger.Sir Philip Ledger studied Music at King's College Cambridge; he was later Director of Music there from 1974-82. During this time he was also conductor of the Cambridge University Musical Society."
-concertDate = 2003-03-08
-concertTime = "7.30pm"
+performanceDate = 2003-03-08
+performanceTime = "7.30pm"
 subtitle = "Hymn to St Cecilia"
 +++
 

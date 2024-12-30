@@ -2,8 +2,8 @@
 title = "Missa Papae Marcelli"
 director = "Alastair Carey"
 teaser = "#### ***with plainsong propers and sacred motets by Palestrina and Orlando di Lasso 1532-1594***Giovanni Pierluigi da Palestrina was Rome's greatest polyphonist at a time when the Italian polyphonists dominated the choral landscape of Europe. His remarkable mass setting *Missa Papae Marcelli* is named for Pope Marcellus, who held the Papacy for only three weeks in the mid 1550s; Marcellus was outspoken in his distate for overly embellished polyphony and its detraction from the importance of the spoken liturgy and the delivery of sacred texts."
-concertDate = 2001-11-26
-concertTime = "8pm"
+performanceDate = 2001-11-26
+performanceTime = "8pm"
 subtitle = "G P da Palestrina 1525?-1594"
 +++
 

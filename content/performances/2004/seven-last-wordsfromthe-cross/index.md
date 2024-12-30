@@ -2,8 +2,8 @@
 title = "Seven Last Words from the Cross"
 director = "Alastair Carey"
 teaser = "#### ***Canticles of Light: Bob Chilcott***This exciting programme of modern repertoire for voices and instruments includes the New Zealand premiere of one of the most important new choral works of the 1990s plus new compositions by New Zealand composers."
-concertDate = 2004-08-20
-concertTime = "8pm"
+performanceDate = 2004-08-20
+performanceTime = "8pm"
 subtitle = "James MacMillan"
 +++
 

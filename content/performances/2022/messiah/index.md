@@ -1,7 +1,7 @@
 +++
 title = "Messiah"
-concertDate = 2022-12-09
-concertTime = "7:30pm"
+performanceDate = 2022-12-09
+performanceTime = "7:30pm"
 subtitle = "With the NZSO"
 +++
 

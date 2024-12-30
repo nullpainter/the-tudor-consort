@@ -2,8 +2,8 @@
 title = "The Song of Simeon"
 director = "Peter Walls"
 teaser = "Along with William Byrd, Peter Philips is one of the great geniuses of the late Tudor age. His music has a polish and sophistication equal to the greatest of the European polyphonists. This programme allowed the choir to present to the public the repertoire that was later recorded for NAXOS."
-concertDate = 1999-08-09
-concertTime = "8 pm"
+performanceDate = 1999-08-09
+performanceTime = "8 pm"
 subtitle = "Counter-Reformation Motets: Peter Philips 1561-1628"
 +++
 

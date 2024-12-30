@@ -2,8 +2,8 @@
 title = "The 40-part motet"
 director = "Michael Stewart"
 teaser = "Many will have experienced Janet Cardiff’s installation at the Wellington City Gallery last year; now is your chance to hear this epic work of the Renaissance with a live choir. *Spem in Alium* has not been performed in Wellington since The Tudor Consort’s 20th anniversary in 2006."
-concertDate = 2011-07-22
-concertTime = "8pm"
+performanceDate = 2011-07-22
+performanceTime = "8pm"
 subtitle = "Spem in Alium"
 +++
 

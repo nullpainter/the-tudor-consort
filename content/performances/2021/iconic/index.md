@@ -2,8 +2,8 @@
 title = "ICONIC"
 director = "Michael Stewart"
 teaser = "The Tudor Consort presents a sumptuous feast of Russian Orthodox music, focusing on music by the ‘Holy Minimalists’ Arvo Pärt and John Tavener, alongside music written specifically for the Russian Orthodox liturgy by Sergei Rachmaninov and Georgy Sviridov.Movements from Rachmaninov’s beloved *All-night Vigil* and *Liturgy of St John* will feature, including the well-known *Bogoroditse Dyevo*."
-concertDate = 2021-07-23
-concertTime = "7:30pm"
+performanceDate = 2021-07-23
+performanceTime = "7:30pm"
 subtitle = "POSTPONED from June 26 due to Covid restrictions"
 +++
 

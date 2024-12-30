@@ -2,8 +2,8 @@
 title = "A Britten Christmas"
 director = "Michael Stewart"
 teaser = "The Tudor Consort completes its 2011 Silver Anniversary season with two well-loved Christmas works by Benjamin Britten."
-concertDate = 2011-12-09
-concertTime = "7.30pm"
+performanceDate = 2011-12-09
+performanceTime = "7.30pm"
 subtitle = "A Ceremony of Carols/A Boy Was Born"
 +++
 

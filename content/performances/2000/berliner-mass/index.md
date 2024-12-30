@@ -2,8 +2,8 @@
 title = "Berliner Mass"
 director = "Ivan Patterson"
 teaser = "#### ***Messe de Minuit: Marc-Antoine Charpentier 1645-1704***The New Zealand premiere performance of Pärt's evocative Berliner Mass, an important composition that has gained rapid popularity in the choral world with its seamless blending of medieval and Renaissance sounds with Eastern orthodoxy and contemporary harmonic language.The Berliner Mass fits into the spirit of the year 2000 - the spirit of new beginnings - by reminding us of the incredible events surrounding the reunification of Germany and Europe during the late 1980s."
-concertDate = 2000-12-08
-concertTime = "8pm"
+performanceDate = 2000-12-08
+performanceTime = "8pm"
 subtitle = "Arvo Pärt 1935-"
 +++
 

@@ -2,8 +2,8 @@
 title = "Love, Death and the Maiden"
 director = "Michael Stewart"
 teaser = "The concepts of love and loss will be explored The Tudor Consort's next programme, which the choir will perform following their appearance at Sing Aotearoa, New Zealand's national choral festival.*Love, Death and the Maiden* will comprise a delectable assortment of choral music from the sacred and secular worlds, spanning the Renaissance through to the 20th Century."
-concertDate = 2016-11-04
-concertTime = "7.30pm"
+performanceDate = 2016-11-04
+performanceTime = "7.30pm"
 subtitle = "Palestrina / Guerrero / Vaughan Williams"
 +++
 

@@ -2,8 +2,8 @@
 title = "Christmas Oratorio - JS Bach"
 director = "Michael Stewart"
 teaser = "Celebrate Christmas with The Tudor Consort! Following on from their hugely successful and critically-acclaimed performance of [Messiah](http://tudor-consort.org.nz/concert/2008/handels-messiah) in 2008, The Tudor Consort is delighted to present JS Bach's popular *Christmas Oratorio*.The Christmas Oratorio tells the Nativity story through music of great joy and virtuosity, the work famously opening with powerful strikes of the timpani."
-concertDate = 2010-12-17
-concertTime = "7.30pm"
+performanceDate = 2010-12-17
+performanceTime = "7.30pm"
 +++
 
 Celebrate Christmas with The Tudor Consort! Following on from their hugely successful and critically-acclaimed performance of [Messiah](http://tudor-consort.org.nz/concert/2008/handels-messiah) in 2008, The Tudor Consort is delighted to present JS Bach's popular *Christmas Oratorio*.

@@ -2,8 +2,8 @@
 title = "Singet dem Herrn"
 director = "Michael Stewart"
 teaser = "The six motets of JS Bach are some of the most vibrant, glorious and timeless choral works in the repertoire."
-concertDate = 2014-11-28
-concertTime = "7:30pm"
+performanceDate = 2014-11-28
+performanceTime = "7:30pm"
 subtitle = "Sing a New Song"
 +++
 

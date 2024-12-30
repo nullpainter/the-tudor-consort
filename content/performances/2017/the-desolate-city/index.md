@@ -2,8 +2,8 @@
 title = "The Desolate City"
 director = "Michael Stewart"
 teaser = "A recital of choral music commemorating the wartime destruction of Dresden and Hiroshima, and the cry of the persecuted Catholic mourning the loss of the spiritual Jerusalem in a violently Protestant England."
-concertDate = 2017-04-13
-concertTime = "7:30pm"
+performanceDate = 2017-04-13
+performanceTime = "7:30pm"
 subtitle = "Music for Holy Week"
 +++
 

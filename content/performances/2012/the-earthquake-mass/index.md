@@ -2,8 +2,8 @@
 title = "The ‘Earthquake’ Mass"
 director = "Michael Stewart"
 teaser = "For those who enjoyed the dense polyphony of Tallis’ *Spem in alium*, you must not miss this performance of Brumel’s intricate *Missa Et ecce terrae motus*."
-concertDate = 2012-05-18
-concertTime = "7.30 pm"
+performanceDate = 2012-05-18
+performanceTime = "7.30 pm"
 subtitle = "Brumel: Missa Et ecce terrae motus"
 +++
 

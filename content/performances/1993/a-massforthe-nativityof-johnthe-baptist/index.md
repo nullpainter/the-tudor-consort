@@ -2,8 +2,8 @@
 title = "A Mass for the Nativity of John the Baptist"
 director = "Peter Walls"
 teaser = "Claudio Monteverdi is best known as a champion of the new style that was emerging in Italy during the early years of the 17th century. In Monteverdi's religious music this is represented by some spectacular settings in which virtuoso writing for voices and instruments is combined with a bold and dramatic approach to word setting."
-concertDate = 1993-06-28
-concertTime = "8 pm"
+performanceDate = 1993-06-28
+performanceTime = "8 pm"
 subtitle = "Claudio Monteverdi 1567-1643"
 +++
 

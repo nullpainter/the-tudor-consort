@@ -2,8 +2,8 @@
 title = "Alone to Sacrifice"
 director = "Michael Stewart"
 teaser = "Join the Tudor Consort in our commemoration of Holy Week. This year our programme is based around Sir James MacMillan’s powerful ’Cantos Sagrados’, a setting of three poems on political repression, violence, and redemption in Latin America. The theme of sacrifice is explored in Kenneth Leighton’s ‘Solus ad Victimam’, and we round out the programme with Lenten works by Byrd, Gibbons, Purcell and Weelkes.Tickets available through Humanitix and at the door."
-concertDate = 2024-03-28
-concertTime = "7:30pm"
+performanceDate = 2024-03-28
+performanceTime = "7:30pm"
 subtitle = "Music for Holy Week"
 +++
 

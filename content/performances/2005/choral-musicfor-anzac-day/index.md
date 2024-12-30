@@ -2,8 +2,8 @@
 title = "Choral Music for ANZAC Day 2005"
 director = "Alastair Carey"
 teaser = "#### ***The Woman with the Alabaster Box: Arvo Pärt 1935-Versa est in Luctum: Alonso Lobo 1555?-1617This Worlde’s Joie: Arnold Bax 1883-1953***Within the liturgical year, the season of Lent focuses primarily on themes of departure, recollection and penitence. Holy Week, leading up to the Crucifixion on Good Friday, has inspired some of sacred music’s most inspired compositions."
-concertDate = 2005-04-24
-concertTime = "7.30pm"
+performanceDate = 2005-04-24
+performanceTime = "7.30pm"
 subtitle = "“Composures”"
 +++
 

@@ -2,8 +2,8 @@
 title = "A Vespers Meditation"
 director = "Alastair Carey"
 teaser = "#### ***Orlande de Lassus 1532?-1594 Alfonso Ferrabosco the Elder 1543-1588***The evening tradition of Vespers as we know it today is one of the oldest of the Catholic church, dating back to the sixth century."
-concertDate = 2003-09-11
-concertTime = "9.30pm"
+performanceDate = 2003-09-11
+performanceTime = "9.30pm"
 subtitle = "Magnificats and Motets"
 +++
 

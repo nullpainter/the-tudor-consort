@@ -2,8 +2,8 @@
 title = "Exaudi"
 director = "Michael Stewart"
 teaser = "We are delighted to welcome Andrew Joyce, Principal Cello of the New Zealand Symphony Orchestra, in a programme of moving choral music with soaring cello obbligato. A sense of farewell underpins this programme. John Tavener’s *Syvati* is a setting of an Eastern Orthodox funeral text, with the cello taking the part of the Ikon of Christ."
-concertDate = 2018-07-27
-concertTime = "7:30pm"
+performanceDate = 2018-07-27
+performanceTime = "7:30pm"
 subtitle = "Songs for cello and choir"
 +++
 

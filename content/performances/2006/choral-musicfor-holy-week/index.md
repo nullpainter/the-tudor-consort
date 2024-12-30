@@ -2,8 +2,8 @@
 title = "Choral Music for Holy Week 2006"
 director = "Alastair Carey"
 teaser = "#### ***Miserere Nostri: Thomas Tallis 1505?-1585Funeral Sentences: Henry Purcell 1659-1695***"
-concertDate = 2006-04-13
-concertTime = "9pm"
+performanceDate = 2006-04-13
+performanceTime = "9pm"
 +++
 
 #### 

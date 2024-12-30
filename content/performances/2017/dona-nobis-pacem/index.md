@@ -2,8 +2,8 @@
 title = "Dona Nobis Pacem"
 director = "Michael Stewart"
 teaser = "To mark the International Day of Peace on September 21, The Tudor Consort presents a concert of music with a peace theme, including Arvo Part’s *The Beatitudes* and settings of the Agnus Dei by Palestrina, Byrd and Josquin."
-concertDate = 2017-09-15
-concertTime = "7:30pm"
+performanceDate = 2017-09-15
+performanceTime = "7:30pm"
 subtitle = "A Concert for World Peace Day"
 +++
 

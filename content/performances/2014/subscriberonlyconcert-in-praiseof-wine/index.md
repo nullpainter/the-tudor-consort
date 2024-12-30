@@ -2,8 +2,8 @@
 title = "Subscriber-only concert - In Praise of Wine"
 director = "Michael Stewart"
 teaser = "A thank-you to our loyal supporters, this informal concert is a special extra for our **subscribers only**. Come and meet the choir over a drink and let us serenade you with some favourite madrigals and motets, themed around that most magnificent substance—wine!"
-concertDate = 2014-02-08
-concertTime = "3pm"
+performanceDate = 2014-02-08
+performanceTime = "3pm"
 +++
 
 A thank-you to our loyal supporters, this informal concert is a special extra for our **subscribers only**. Come and meet the choir over a drink and let us serenade you with some favourite madrigals and motets, themed around that most magnificent substance—wine!

@@ -2,8 +2,8 @@
 title = "Choral Music for Holy Week 2005"
 director = "Alastair Carey"
 teaser = "#### ***The Woman with the Alabaster Box: Arvo Pärt 1935-Stabat Mater: Orlandi de Lassus 1532-1594***"
-concertDate = 2005-03-24
-concertTime = "9pm"
+performanceDate = 2005-03-24
+performanceTime = "9pm"
 +++
 
 #### 

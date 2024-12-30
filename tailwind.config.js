@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "secondary": "#d74564",
+                "secondary": "#6b615d",
             }
         }
     },
@@ -17,6 +17,13 @@ module.exports = {
     ],
     daisyui: {
         logs: false,
-        themes: ["black"]
+        themes: [
+            {
+                light: {
+                    ...require("daisyui/src/theming/themes")["black"],
+                    secondary: "#6b615d",
+                },
+            },
+        ],
     },
 }

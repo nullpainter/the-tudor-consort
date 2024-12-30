@@ -6,6 +6,55 @@ div.next-performance {
     font-size: 180%;
 }
 
+main.home {
+    div.next-performance {
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h5 {
+            font-size: 2rem;
+        }
+
+        .performance-summary {
+            max-width: 500px;
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }
+}
+
+.next-performance {
+
+    .hero-image {
+        background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, hsl(17, 7%, 2% / 0.4) 90%);
+
+        img {
+            position: relative;
+            z-index: -1;
+            display: block;
+        }
+    }
+
+    .performance-time {
+        font-size: 1.1rem;
+    }
+
+    .performance-date {
+        font-size: 1.8rem;
+    }
+
+    .director {
+        font-size: 1.2rem;
+    }
+
+    .performance-details {
+        font-size: 1rem;
+    }
+}
+
+
 .card {
     display: flex;
     flex-direction: column;

@@ -2,8 +2,8 @@
 title = "Ad Majorem Dei Gloriam"
 director = "Michael Stewart"
 teaser = "2013 marks the anniversaries of three giants of 20th century choral music: the 100th anniversary of the birth of Benjamin Britten, and the 50th anniversary of the deaths of Francis Poulenc and Paul Hindemith."
-concertDate = 2013-06-21
-concertTime = "7pm"
+performanceDate = 2013-06-21
+performanceTime = "7pm"
 subtitle = "Music by Britten, Poulenc and Hindemith"
 +++
 
