@@ -47,11 +47,11 @@
 
             {{/* Hero image */}}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
-            <div class="hero-image">
+            <div class="hero-image hero-image-gradient">
                 {{ if $image }}
 
                 {{ $width := $image.Width }}
-                {{ $image := $image.Crop (printf "%dx%d smart" $width 2000) }}
+                {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }}
 
                 {{ with $image }}
 
