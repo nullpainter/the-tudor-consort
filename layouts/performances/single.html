@@ -6,26 +6,37 @@
 {{ $nearestFuturePage := first 1 $performancePages }}
 {{ $isNextPerformance := eq .Permalink (index $nearestFuturePage 0).Permalink }}
 
-<div class="relative next-performance">
+<div class="hero-image hero-image-gradient">
 
-    <div class="absolute mt-8 ms-8">
+    {{ $image := .Resources.GetMatch "hero.jpg" }}
+
+    {{ if $image }}
+    {{ $image := $image.Process "fill 1200x420 smart" }}
+    {{ with $image }}
+
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+    {{ end }}
+    {{ else }}
+    <figure class="m-0">
+        <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
+    </figure>
+    {{ end }}
+</div>
+
+<div class=" next-performance">
+
+    <div class=" mt-8 ms-8">
         <h5 class="mt-2 mb-2 font-semibold text-primary-content performance-date">
             {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
 
         {{ if .Params.surTitle }}
-        <h2 class="font-semibold mt-14 mb-0">{{ .Params.surTitle }}</h2>
+        <h2 class="font-semibold mt-0 mb-0">{{ .Params.surTitle }}</h2>
         {{ end }}
 
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
         {{ if .Params.subTitle }}
-
-        {{/* Highlight colour only set for the next concert */}}
-        {{ if $isNextPerformance }}
         <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
-        {{ else }}
-        <h3 class="mt-1 mb-0 font-semibold">{{ .Params.subtitle}}</h3>
-        {{ end }}
         {{ end }}
 
         <h5 class="mt-4 font-semibold director">Directed by {{ .Params.director }}</h5>
@@ -52,25 +63,11 @@
 
     </div>
 
-    <div class="hero-image hero-image-gradient">
-
-        {{ $image := .Resources.GetMatch "hero.jpg" }}
-
-        {{ if $image }}
-        {{ $image := $image.Process "fill 1200x620 smart" }}
-        {{ with $image }}
-
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
-        {{ end }}
-        {{ else }}
-        <figure class="m-0">
-            <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
-        </figure>
-        {{ end }}
-    </div>
 </div>
 
-{{.Content}}
+<div class="mt-10">
+    {{.Content}}
+</div>
 
 
 {{ end }}
