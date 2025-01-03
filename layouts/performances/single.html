@@ -19,7 +19,13 @@
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
         {{ if .Params.subTitle }}
+
+        {{/* Highlight colour only set for the next concert */}}
+        {{ if $isNextPerformance }}
         <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
+        {{ else }}
+        <h3 class="mt-1 mb-0 font-semibold">{{ .Params.subtitle}}</h3>
+        {{ end }}
         {{ end }}
 
         <h5 class="mt-4 font-semibold director">Directed by {{ .Params.director }}</h5>
