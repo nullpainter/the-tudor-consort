@@ -6,9 +6,10 @@
 {{ $nearestFuturePage := first 1 $performancePages }}
 {{ $isNextPerformance := eq .Permalink (index $nearestFuturePage 0).Permalink }}
 
+{{ $image := .Resources.GetMatch "hero.jpg" }}
+
 <div class="hero-image hero-image-gradient">
 
-    {{ $image := .Resources.GetMatch "hero.jpg" }}
 
     {{ if $image }}
     {{ $image := $image.Process "fill 1200x420 smart" }}
@@ -23,10 +24,19 @@
     {{ end }}
 </div>
 
-<div class=" next-performance">
+{{ $accentColour := .Params.accentColour }}
 
-    <div class=" mt-8 ms-8">
-        <h5 class="mt-2 mb-2 font-semibold text-primary-content performance-date">
+{{/* Derive accent colour if not set */}}
+{{ if and (not $accentColour) $image }}
+{{ $colours := $image.Colors }}
+{{ $colours = sort $colours "Luminance" }}
+{{ $accentColour = index $colours 1 }}
+{{ end }}
+
+<div class="next-performance">
+
+    <div class="mt-8">
+        <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
             {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
 
         {{ if .Params.surTitle }}
@@ -36,10 +46,13 @@
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
         {{ if .Params.subTitle }}
-        <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
+        <h3 class="mt-1 mb-2 font-semibold text-secondary" style="color: {{ $accentColour }}">{{ .Params.subtitle}}</h3>
         {{ end }}
 
-        <h5 class="mt-4 font-semibold director">Directed by {{ .Params.director }}</h5>
+
+        {{ if .Params.director }}
+        <h5 class="mt-2 font-semibold director">Directed by {{ .Params.director }}</h5>
+        {{ end }}
 
         {{ if $isNextPerformance }}
 
@@ -56,7 +69,7 @@
         </div>
 
         <a href="{{ .Params.ticketUrl }}">
-            <button class="btn rounded-md btn-secondary mt-8">Tickets from Humanitix</button>
+            <button class="btn rounded-md mt-8" style="background: {{ $accentColour }}">Tickets from Humanitix</button>
         </a>
 
         {{ end }}
@@ -65,7 +78,7 @@
 
 </div>
 
-<div class="mt-10">
+<div class=" mt-10">
     {{.Content}}
 </div>
 

@@ -10,6 +10,7 @@ Hill Street, Wellington
 """
 ticketPrices = "$30 / $20 / school children free"
 ticketUrl = "https://humanitix.co.nz"
+accentColour = "#6b615d"
 +++
 
 
