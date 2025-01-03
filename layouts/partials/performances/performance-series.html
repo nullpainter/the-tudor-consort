@@ -1,10 +1,6 @@
 {{ $performancePages := sort .Pages "Params.performanceDate" }}
 
-{{/* Calculate the start of the next year */}}
-{{ $nextYear := now.AddDate 1 0 0 }}
-{{ $nextYear := time (printf "%d-01-01T00:00:00Z" $nextYear.Year) }}
-
-{{ $performanceSeries := where $performancePages "Params.performanceDate" "gt" $nextYear }}
+{{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
 
 
 <div class="grid grid-cols-2 gap-4">

@@ -1,5 +1,11 @@
 {{ define "main" }}
 
+{{/* Identify if the current page is the next performance */}}
+{{ $performancePages := sort .Site.Pages "Params.performanceDate" }}
+{{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
+{{ $nearestFuturePage := first 1 $performancePages }}
+{{ $isNextPerformance := eq .Permalink (index $nearestFuturePage 0).Permalink }}
+
 <div class="relative next-performance">
 
     <div class="absolute mt-8 ms-8">
@@ -18,6 +24,8 @@
 
         <h5 class="mt-4 font-semibold director">Directed by {{ .Params.director }}</h5>
 
+        {{ if $isNextPerformance }}
+
         <div class="performance-details text-primary-content mt-10">
             <div class="performance-time font-medium">
                 {{ .Params.performanceTime }}
@@ -33,6 +41,8 @@
         <a href="{{ .Params.ticketUrl }}">
             <button class="btn rounded-md btn-secondary mt-8">Tickets from Humanitix</button>
         </a>
+
+        {{ end }}
 
     </div>
 
