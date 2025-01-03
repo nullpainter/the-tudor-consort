@@ -2,12 +2,12 @@
 
 {{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
 
-<div class="grid grid-cols-2 gap-4 performance-series">
+<div class="grid grid-cols-2 gap-6 performance-series">
 
     {{ range $performanceSeries }}
 
     <a href="{{ .Permalink }}" class="no-underline">
-        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
+        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full mt-5">
             <div>
                 {{ if .Params.surTitle }}
                 <span class="surtitle font-bold">{{ .Params.surTitle }}&nbsp;</span>
@@ -25,6 +25,7 @@
                 {{/* Render the image if present, otherwise display a generic spacer */}}
                 {{ $image := .Resources.GetMatch "hero.jpg" }}
                 {{ if $image }}
+                {{ $image := $image.Process "fit 600x400 smart" }}
                 {{ $image := $image.Process "fill 600x400 smart" }}
                 {{ with $image }}
                 <figure class="m-0">
