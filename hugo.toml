@@ -15,3 +15,9 @@ target = 'scss'
 
 # Allow raw HTML strings for images
 isPlainText = true
+
+[menus]
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 1
