@@ -8,21 +8,15 @@
 
 {{ $image := .Resources.GetMatch "hero.jpg" }}
 
+{{ if $image }}
 <div class="hero-image hero-image-gradient">
-
-
-    {{ if $image }}
     {{ $image := $image.Process "fill 1200x420 smart" }}
     {{ with $image }}
 
     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
     {{ end }}
-    {{ else }}
-    <figure class="m-0">
-        <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
-    </figure>
-    {{ end }}
 </div>
+{{ end }}
 
 {{ $accentColour := .Params.accentColour }}
 
@@ -37,7 +31,8 @@
 
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
-            {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
+            {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+        </h5>
 
         {{ if .Params.surTitle }}
         <h2 class="font-semibold mt-0 mb-0">{{ .Params.surTitle }}</h2>
@@ -58,6 +53,7 @@
         {{ if $isNextPerformance }}
 
         <div class="performance-details text-primary-content mt-10">
+
             <div class="performance-time font-medium">
                 {{ .Params.performanceTime }}
             </div>
