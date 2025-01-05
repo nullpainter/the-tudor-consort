@@ -4,6 +4,11 @@ director = "Peter Walls"
 performanceDate = 1993-12-07
 performanceTime = "8 pm"
 subtitle = "Orlandi de Lassus"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 

@@ -5,6 +5,11 @@ teaser = "This performance was part of the Wellington Purcell Festival 1995.With
 performanceDate = 1995-09-22
 performanceTime = "8 pm"
 subtitle = "works by Purcell, Child, Turner"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 This performance was part of the Wellington Purcell Festival 1995.

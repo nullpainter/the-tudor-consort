@@ -5,6 +5,12 @@ teaser = "#### ***Suscipe Quaeso / Videte Miraculum****The Tudor Consort* joins 
 performanceDate = 2005-12-17
 performanceTime = "7.30pm"
 subtitle = "Thomas Tallis 1505?-1585"
+venue = """
+St Mary of the Angels  
+Boulcott St  
+Wellington  
+
+"""
 +++
 
 #### 

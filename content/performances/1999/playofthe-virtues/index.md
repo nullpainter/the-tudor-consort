@@ -5,6 +5,11 @@ teaser = "Programme notes"
 performanceDate = 1999-05-29
 performanceTime = "7.30 pm"
 subtitle = "Hildegard von Bingen 1098-1179"
+venue = """
+National War Memorial  
+Buckle St  
+Wellington
+"""
 +++
 
 Programme notes

@@ -5,6 +5,11 @@ teaser = "Old meets new in Renaissance Influences, a series of annual recitals f
 performanceDate = 2007-07-28
 performanceTime = "4pm"
 subtitle = "Pizzetti: Messa di Requiem / Palestrina: Missa Sicut lilium inter spinas"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 Old meets new in Renaissance Influences, a series of annual recitals featuring a twentieth century composer alongside an acknowledged influence from the past.

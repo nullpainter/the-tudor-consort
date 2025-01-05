@@ -4,6 +4,11 @@ director = "Peter Walls"
 performanceDate = 1995-06-27
 performanceTime = "8 pm"
 subtitle = "with secular vocal works by Josquin, Sermisy and Willaert"
+venue = """
+Wellington Cathedral of St Paul  
+Cnr Molesworth and Hill St  
+Wellington
+"""
 +++
 
 

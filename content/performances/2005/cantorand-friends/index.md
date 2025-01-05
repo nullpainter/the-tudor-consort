@@ -5,6 +5,11 @@ teaser = "The choir’s exceptional solo talent performs for your enjoyment. Can
 performanceDate = 2005-09-17
 performanceTime = "3pm"
 subtitle = "European tour fundraising recital"
+venue = """
+St Andrews on the Terrace  
+The Terrace  
+Wellington
+"""
 +++
 
 The choir’s exceptional solo talent performs for your enjoyment. Cantor Alastair Carey is joined by tour choir members Craig Beardsworth, Megan Hurnard, countertenor Christopher Warwick and Lexus Song Quest winner Madeleine Pierard in this programme of favourite arias, duets and art songs.

@@ -54,6 +54,7 @@
         <h5 class="mt-2 font-semibold director">Directed by {{ .Params.director }}</h5>
         {{ end }}
 
+        {{/* Display time and ticketing details for the next concert only */}}
         {{ if $isNextPerformance }}
 
         <div class="performance-details text-primary-content mt-10">
@@ -71,6 +72,17 @@
         <a href="{{ .Params.ticketUrl }}">
             <button class="btn rounded-md mt-8" style="background: {{ $accentColour }}">Tickets from Humanitix</button>
         </a>
+
+        {{ else }}
+
+        <div class="performance-details text-primary-content mt-10">
+
+            <div class="venue mt-2">
+                {{ .Params.venue | markdownify }}
+            </div>
+
+            <div class="ticket-prices mt-4"> {{ .Params.ticketPrices }} </div>
+        </div>
 
         {{ end }}
 

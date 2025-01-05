@@ -5,6 +5,11 @@ teaser = "#### ***various composers: sacred works by Bach, Victoria, Gibbons and
 performanceDate = 2003-04-24
 performanceTime = "2.30pm"
 subtitle = "\"Composures\""
+venue = """
+National War Memorial  
+Buckle St  
+Wellington
+"""
 +++
 
 #### 

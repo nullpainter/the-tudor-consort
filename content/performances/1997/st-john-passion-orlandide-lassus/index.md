@@ -4,6 +4,11 @@ director = "Peter Walls"
 performanceDate = 1997-03-27
 performanceTime = "12 noon"
 subtitle = "with motets by Lassus and Peter Philips"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 

@@ -5,6 +5,11 @@ teaser = "In the Middle Ages the term \"carol singing\" had a much wider usage t
 performanceDate = 1989-12-04
 performanceTime = "8pm"
 subtitle = "Jack Body: Five Lullabies"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 In the Middle Ages the term "carol singing" had a much wider usage than it does in the 21st century, applying as it did to virtually any song in which verses alternate with a "burden" (refrain).
