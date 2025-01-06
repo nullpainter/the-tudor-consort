@@ -2,8 +2,13 @@
 title = "By Popular Request..."
 director = "Michael Stewart"
 teaser = "Is there something you’re dying to hear us sing? Something you’ve heard us sing before and would like to hear again? Or perhaps there is a favourite choral work of yours that you would love to hear in the flesh? This is your chance, as the programme for this concert is entirely in your hands!"
-performanceDate = 2014-05-30
+performanceDate = 2014-05-31
 performanceTime = "7:30pm"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 Is there something you’re dying to hear us sing? Something you’ve heard us sing before and would like to hear again? Or perhaps there is a favourite choral work of yours that you would love to hear in the flesh? This is your chance, as the programme for this concert is entirely in your hands!

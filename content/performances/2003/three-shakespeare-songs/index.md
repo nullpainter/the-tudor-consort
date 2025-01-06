@@ -2,9 +2,14 @@
 title = "Three Shakespeare Songs"
 director = "Alastair Carey"
 teaser = "#### ***with additional repertoire by Howells, Brahms, Gibbons, Tallis and Dove***Vaughan-Williams' masterful settings of three of Shakespeare's most profound texts, with additional sacred and secular choral works by the great composer and his contemporaries, plus Christmas carols — including an exciting new Christmas composition by English composer Jonathan Dove."
-performanceDate = 2003-12-12
+performanceDate = 2003-12-13
 performanceTime = "8pm"
 subtitle = "Ralph Vaughan Williams"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 #### 

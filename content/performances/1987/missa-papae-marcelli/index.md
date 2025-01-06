@@ -2,9 +2,14 @@
 title = "Missa Papae Marcelli"
 director = "Simon Ravens"
 teaser = "During the 16th century the whole issue of music in the church was addressed by the Council of Trent, who were understandably concerned about the number of popular secular melodies which were finding their way into Mass settings of composers. The reformists were also anxious that the texts of the Mass should no longer be obscured by too much musical elaboration."
-performanceDate = 1987-09-19
+performanceDate = 1987-09-20
 performanceTime = "8pm"
 subtitle = "G P da Palestrina 1525?-1594"
+venue = """
+Wellington Cathedral of St Paul  
+Cnr Molesworth and Hill St  
+Wellington
+"""
 +++
 
 During the 16th century the whole issue of music in the church was addressed by the Council of Trent, who were understandably concerned about the number of popular secular melodies which were finding their way into Mass settings of composers. The reformists were also anxious that the texts of the Mass should no longer be obscured by too much musical elaboration. Although Pope Marcellus only reigned for three weeks before his untimely death, he took the opportunity of addressing the Papal Choir (of which Palestrina was a member) in 1555 and registered his own disapproval of such musical defects. Perhaps this event explains the dedicatory title of the Missa Papae Marcelli, which seems to adhere to the recommendations of the Council of Trent. It is symptomatic of Palestrina's genius that he was able to satisfy the demand for a more direct musical style without abandoning his natural refinement and conservatism.

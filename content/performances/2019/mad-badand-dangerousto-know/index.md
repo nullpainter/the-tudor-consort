@@ -2,9 +2,14 @@
 title = "Mad, Bad and Dangerous to Know"
 director = "Michael Stewart"
 teaser = "From micturating organists through to murderous princes, this programme takes a look at repertoire from some of the less law abiding composers throughout history, as well as those who, due to their political or religious leanings, were indeed ‘dangerous to know’. Featuring Gesualdo (of course), Weelkes, Byrd and Gombert."
-performanceDate = 2019-06-21
+performanceDate = 2019-06-22
 performanceTime = "7:30pm"
 subtitle = "With Aurora IV"
+venue = """
+St Andrews on the Terrace  
+The Terrace  
+Wellington
+"""
 +++
 
 From micturating organists through to murderous princes, this programme takes a look at repertoire from some of the less law abiding composers throughout history, as well as those who, due to their political or religious leanings, were indeed ‘dangerous to know’. Featuring Gesualdo (of course), Weelkes, Byrd and Gombert.

@@ -2,7 +2,7 @@
 title = "St Matthew Passion: Claudin de Sermisy 1490?-1562/Missa d'ung aultre amer: Josquin des Prez 1450?-1521"
 director = "Simon Ravens"
 teaser = "\"Josquin may be said to be, in music, a prodigy of nature, as our Michelangelo has been in architecture.\" So ran the text of Certon's deploration on the death of Josquin des Prez. Although Josquin spent many years working away from France, in his sixties he returned there to work at the court of Louis XII. It is in a recreation of a Sainte Chapelle service that Josquin's simple and affecting Missa d'ung aultre amer is placed in this performance."
-performanceDate = 1992-10-28
+performanceDate = 1992-10-29
 performanceTime = "8pm"
 venue = """
 Sacred Heart Cathedral  

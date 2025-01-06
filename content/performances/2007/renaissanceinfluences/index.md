@@ -2,7 +2,7 @@
 title = "Renaissance influences"
 director = "Michael Stewart"
 teaser = "Old meets new in Renaissance Influences, a series of annual recitals featuring a twentieth century composer alongside an acknowledged influence from the past."
-performanceDate = 2007-07-28
+performanceDate = 2007-07-29
 performanceTime = "4pm"
 subtitle = "Pizzetti: Messa di Requiem / Palestrina: Missa Sicut lilium inter spinas"
 venue = """

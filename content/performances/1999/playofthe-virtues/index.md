@@ -2,7 +2,7 @@
 title = "Play of the Virtues"
 director = "Peter Walls"
 teaser = "Programme notes"
-performanceDate = 1999-05-29
+performanceDate = 1999-05-30
 performanceTime = "7.30 pm"
 subtitle = "Hildegard von Bingen 1098-1179"
 venue = """

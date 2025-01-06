@@ -2,9 +2,14 @@
 title = "Portal to Paradise"
 director = "Alastair Carey"
 teaser = "Former Music Director Alastair Carey returns from the United Kingdom to direct our next performance. *Portal to Paradise* will explore the transition from mortality to eternity featuring works by Tomkins, Lôbo and Howells."
-performanceDate = 2016-08-26
+performanceDate = 2016-08-27
 performanceTime = "7:30pm"
 subtitle = "Lobo / Howells Requiem"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 Former Music Director Alastair Carey returns from the United Kingdom to direct our next performance. *Portal to Paradise* will explore the transition from mortality to eternity featuring works by Tomkins, Lôbo and Howells.

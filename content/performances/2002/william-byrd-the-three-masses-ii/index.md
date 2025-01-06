@@ -2,9 +2,15 @@
 title = "William Byrd: The Three Masses II"
 director = "Alastair Carey"
 teaser = "#### ***with the polyphonic propers for Easter Day by William Byrd***William Byrd's three settings of the Ordinary of Mass for the underground Recusant Catholic church in England are among the most remarkable sacred works of the Renaissance. Their emotional intensity and sheer compositional genius raise Byrd above his contemporaries as England's finest polyphonist."
-performanceDate = 2002-06-10
+performanceDate = 2002-06-11
 performanceTime = "8pm"
 subtitle = "Mass for Five Voices"
+venue = """
+St Mary of the Angels  
+Boulcott St  
+Wellington  
+
+"""
 +++
 
 #### 

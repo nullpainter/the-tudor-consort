@@ -2,7 +2,7 @@
 title = "Handel's Messiah"
 director = "Michael Stewart"
 teaser = "The Tudor Consort is proud to present Georg Frederic Handel’s masterpiece *Messiah* on Thursday 4 December in the Wellington Town Hall, in conjunction with the Vector Wellington Orchestra and a quartet of talented young soloists led by Madeleine Pierard, under the direction of Music Director Michael Stewart."
-performanceDate = 2008-12-03
+performanceDate = 2008-12-04
 performanceTime = "7.30pm"
 venue = """
 Wellington Town Hall  

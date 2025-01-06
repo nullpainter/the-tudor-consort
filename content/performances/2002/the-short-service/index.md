@@ -2,7 +2,7 @@
 title = "The Short Service"
 director = "Alastair Carey"
 teaser = "Gibbons was Organist at the Chapel Royal and Westminster Abbey. He was recognised as the leading choral composer and organist of his generation at a time when England dominated the musical landscape of Europe."
-performanceDate = 2002-02-16
+performanceDate = 2002-02-17
 performanceTime = "8pm"
 subtitle = "Orlando Gibbons 1583-1625, with additional sacred works"
 venue = """

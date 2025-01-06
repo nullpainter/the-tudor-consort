@@ -2,9 +2,14 @@
 title = "A Vespers Meditation"
 director = "Alastair Carey"
 teaser = "#### ***Orlande de Lassus 1532?-1594 Alfonso Ferrabosco the Elder 1543-1588***The evening tradition of Vespers as we know it today is one of the oldest of the Catholic church, dating back to the sixth century."
-performanceDate = 2003-09-11
+performanceDate = 2003-09-12
 performanceTime = "9.30pm"
 subtitle = "Magnificats and Motets"
+venue = """
+Wellington Cathedral of St Paul  
+Cnr Molesworth and Hill St  
+Wellington
+"""
 +++
 
 #### 

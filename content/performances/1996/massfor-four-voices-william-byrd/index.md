@@ -1,7 +1,7 @@
 +++
 title = "Mass for Four Voices: William Byrd 1540?-1623"
 director = "Peter Walls"
-performanceDate = 1996-12-20
+performanceDate = 1996-12-21
 performanceTime = "8 pm"
 subtitle = "with Carols from around the world"
 venue = """

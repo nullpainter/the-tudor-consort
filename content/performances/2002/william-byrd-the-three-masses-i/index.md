@@ -2,9 +2,14 @@
 title = "William Byrd: The Three Masses I"
 director = "Alastair Carey"
 teaser = "William Byrd's three settings of the Ordinary of Mass for the underground Recusant Catholic church in England are among the most remarkable sacred works of the Renaissance. Their emotional intensity and sheer compositional genius raise Byrd above his contemporaries as England's finest polyphonist."
-performanceDate = 2002-06-08
+performanceDate = 2002-06-09
 performanceTime = "8pm"
 subtitle = "Mass for Three Voices and Mass for Four Voices"
+venue = """
+Sacred Heart Cathedral  
+Hill Street  
+Wellington
+"""
 +++
 
 William Byrd's three settings of the Ordinary of Mass for the underground Recusant Catholic church in England are among the most remarkable sacred works of the Renaissance. Their emotional intensity and sheer compositional genius raise Byrd above his contemporaries as England's finest polyphonist.

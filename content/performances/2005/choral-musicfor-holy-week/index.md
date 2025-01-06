@@ -2,8 +2,13 @@
 title = "Choral Music for Holy Week 2005"
 director = "Alastair Carey"
 teaser = "#### ***The Woman with the Alabaster Box: Arvo Pärt 1935-Stabat Mater: Orlandi de Lassus 1532-1594***"
-performanceDate = 2005-03-24
+performanceDate = 2005-03-25
 performanceTime = "9pm"
+venue = """
+Wellington Cathedral of St Paul  
+Cnr Molesworth and Hill St  
+Wellington
+"""
 +++
 
 #### 

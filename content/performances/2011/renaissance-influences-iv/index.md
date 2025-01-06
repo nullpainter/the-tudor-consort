@@ -2,9 +2,15 @@
 title = "Renaissance Influences IV"
 director = "Michael Stewart"
 teaser = "Two world premieres by leading New Zealand composers Ross Harris and Jack Body feature in our upcoming concert – *Renaissance Influences IV – Made in New Zealand*."
-performanceDate = 2011-10-07
+performanceDate = 2011-10-08
 performanceTime = "3pm"
 subtitle = "Made in New Zealand"
+venue = """
+St Mary of the Angels  
+Boulcott St  
+Wellington  
+
+"""
 +++
 
 Two world premieres by leading New Zealand composers Ross Harris and Jack Body feature in our upcoming concert – *Renaissance Influences IV – Made in New Zealand*.

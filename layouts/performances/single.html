@@ -52,7 +52,7 @@
         {{/* Display time and ticketing details for the next concert only */}}
         {{ if $isNextPerformance }}
 
-        <div class="performance-details text-primary-content mt-10">
+        <div class="performance-details text-primary-content mt-7">
 
             <div class="performance-time font-medium">
                 {{ .Params.performanceTime }}
@@ -71,7 +71,7 @@
 
         {{ else }}
 
-        <div class="performance-details text-primary-content mt-10">
+        <div class="performance-details text-primary-content mt-7">
 
             <div class="venue mt-2">
                 {{ .Params.venue | markdownify }}

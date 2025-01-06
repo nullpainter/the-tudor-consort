@@ -2,7 +2,7 @@
 title = "REPAST"
 director = "Michael Stewart"
 teaser = "REPAST is an intimate mid-winter feast of partsongs themed around eating and drinking! Featuring small groups of one-voice-per-part repertoire by Henry Purcell, Orlando de Lassus and Francis Poulenc. The performance will be seated cabaret style, so bring your friends! We look forward to performing in the beautiful Town Halls in Martinborough and Khandallah for this programme. Complimentary drinks and nibbles will be provided.Single ticket price: $50 (drink and nibbles included)"
-performanceDate = 2024-06-14
+performanceDate = 2024-06-15
 performanceTime = "4pm"
 venue = """
 Khandallah Town Hall  

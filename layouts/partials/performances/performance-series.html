@@ -2,14 +2,30 @@
 
 {{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
 
-<div class="grid grid-cols-2 gap-6 performance-series">
+{{ $surTitleForRow := false }}
+{{ $index := 0 }}
+
+
+{{ $chunks := partial "chunkIt" (slice $performanceSeries 2) . }}
+ho
+
+
+<div class="grid grid-cols-2 gap-4 performance-series">
 
     {{ range $performanceSeries }}
 
+    {{ if eq (mod $index 2) 0 }}
+    {{ $index = 0 }}
+    {{ end }}
+
+
+
+
+
     <a href="{{ .Permalink }}" class="no-underline">
-        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full mt-5">
+        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
             <div>
-                {{ if .Params.surTitle }}
+                {{ if or $surTitleForRow .Params.surTitle }}
                 <span class="surtitle font-bold">{{ .Params.surTitle }}&nbsp;</span>
                 {{ end }}
                 <h2 class="card-title mt-0 mb-0 font-extrabold">{{ .Title }}</h2>
@@ -25,7 +41,6 @@
                 {{/* Render the image if present, otherwise display a generic spacer */}}
                 {{ $image := .Resources.GetMatch "hero.jpg" }}
                 {{ if $image }}
-                {{ $image := $image.Process "fit 600x400 smart" }}
                 {{ $image := $image.Process "fill 600x400 smart" }}
                 {{ with $image }}
                 <figure class="m-0">
@@ -43,6 +58,9 @@
                 {{ .Summary }}
             </div>
         </div>
+
+        {{ $index = add $index 1 }}
+
 
     </a>
     {{ end }}
