@@ -1,31 +1,14 @@
 {{ $performancePages := sort .Pages "Params.performanceDate" }}
-
 {{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
-
-{{ $surTitleForRow := false }}
-{{ $index := 0 }}
-
-
-{{ $chunks := partial "chunkIt" (slice $performanceSeries 2) . }}
-ho
-
 
 <div class="grid grid-cols-2 gap-4 performance-series">
 
     {{ range $performanceSeries }}
 
-    {{ if eq (mod $index 2) 0 }}
-    {{ $index = 0 }}
-    {{ end }}
-
-
-
-
-
     <a href="{{ .Permalink }}" class="no-underline">
         <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
             <div>
-                {{ if or $surTitleForRow .Params.surTitle }}
+                {{ if .Params.surTitle }}
                 <span class="surtitle font-bold">{{ .Params.surTitle }}&nbsp;</span>
                 {{ end }}
                 <h2 class="card-title mt-0 mb-0 font-extrabold">{{ .Title }}</h2>
@@ -58,10 +41,6 @@ ho
                 {{ .Summary }}
             </div>
         </div>
-
-        {{ $index = add $index 1 }}
-
-
     </a>
     {{ end }}
 </div>
