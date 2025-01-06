@@ -29,9 +29,19 @@
 
 <div class="next-performance">
 
+
+    {{ $performanceDate := .Params.performanceDate | time }}
+    {{ $currentYear := now.Year }}
+    {{ $performanceYear := $performanceDate.Year }}
+
+
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
-            {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+            {{ if eq $performanceYear $currentYear }}
+            {{ $performanceDate | dateFormat "Monday January 2" }}
+            {{ else }}
+            {{ $performanceDate | dateFormat "Monday January 2 2006" }}
+            {{ end }}
         </h5>
 
         {{ if .Params.surTitle }}
