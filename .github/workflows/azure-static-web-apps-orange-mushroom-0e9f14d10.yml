@@ -30,7 +30,7 @@ jobs:
           api_location: "" 
           output_location: "public" 
         env: 
-          BASE_URL: https://orange-mushroom-0e9f14d10.4.azurestaticapps.net/
+          BASE_URL: https://preview.tudor-consort.org.nz/
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
