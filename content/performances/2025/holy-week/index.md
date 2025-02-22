@@ -1,7 +1,7 @@
 +++
 title = "Holy Week"
 director = "Michael Stewart"
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu libero a quam fringilla vestibulum at non enim. Phasellus turpis est, lobortis eget rhoncus non, ullamcorper nec nisi."
+summary = "Join us at Wellington Cathedral of St Paul on Good Friday to hear John Sheppard’s expansive and moving _Media vita in morte sumus_. We will perform this alongside the poignant Lamentations of Jeremiah by Thomas Tallis, as well as works by Thomas Weelkes, Orlando Gibbons and William Byrd. A truly Tudor programme!"
 performanceDate = 2025-04-18
 performanceTime = "7:30pm, pre-concert talk 7pm"
 venue = """
@@ -9,11 +9,11 @@ Wellington Cathedral of St Paul
 Hill Street, Wellington
 """
 ticketPrices = "$30 / $20 / school children free"
-ticketUrl = "https://humanitix.co.nz"
+ticketUrl = "https://events.humanitix.com/holy-week"
 accentColour = "#6b615d"
 +++
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra turpis non orci semper auctor. Donec malesuada ultrices tortor. Ut sit amet felis quis dui malesuada pharetra eget sit amet tortor. In vel nibh vel turpis finibus bibendum ac sed tellus. Aenean gravida ante risus, ac tincidunt enim convallis et. Mauris luctus metus ac est finibus, ac volutpat ipsum pretium. Donec magna nunc, tempus in nunc sed, posuere auctor lacus. Proin ullamcorper felis nunc, quis viverra sapien hendrerit hendrerit. Pellentesque sed porttitor sem. Vestibulum sed aliquet risus. Aenean et molestie mauris. Cras ultrices dictum molestie. Suspendisse tincidunt, justo ut hendrerit fermentum, ipsum sem sagittis sem, sed pellentesque arcu tellus ut sem. Aenean non nibh dapibus, molestie orci vitae, tempus purus. Ut mattis ut justo in rutrum. Maecenas viverra enim quis purus hendrerit congue.
+_In the midst of life we are in death&hellip;_
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu libero a quam fringilla vestibulum at non enim. Phasellus turpis est, lobortis eget rhoncus non, ullamcorper nec nisi. Aliquam at velit risus. Morbi ac neque at nunc consectetur fringilla. In sed nibh eleifend, placerat sapien sit amet, euismod nunc. Quisque efficitur finibus augue. Nam eget accumsan lacus, at elementum nunc. Pellentesque sit amet urna quam. Vivamus ornare ut ex ut semper. Praesent vehicula viverra dolor, sed malesuada mi commodo efficitur. Quisque id est et magna cursus pretium. Mauris malesuada nisl nec sapien faucibus eleifend. Nunc dapibus neque sit amet ipsum convallis pulvinar. Fusce eget aliquam lacus. Nam tellus velit, dignissim quis ex vitae, blandit varius erat.
+Join us at Wellington Cathedral of St Paul on Good Friday to hear John Sheppard’s expansive and moving _Media vita in morte sumus_. This Lenten antiphon has been sung as part of the evening service of Compline since the Middle Ages, and this particular setting is a monument of the English renaissance repertoire, requiring immense vocal stamina. We will perform this alongside the poignant Lamentations of Jeremiah by Thomas Tallis, as well as works by Thomas Weelkes, Orlando Gibbons and William Byrd. A truly Tudor programme!

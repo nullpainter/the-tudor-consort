@@ -1,16 +1,23 @@
 {{ define "main" }}
 
-{{/* Identify if the current page is the next performance */}}
+{{ $performanceDate := .Params.performanceDate | time }}
+{{ $currentYear := now.Year }}
+{{ $performanceYear := $performanceDate.Year }}
+
 {{ $performancePages := sort .Site.Pages "Params.performanceDate" }}
 {{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
 {{ $nearestFuturePage := first 1 $performancePages }}
 {{ $isNextPerformance := eq .Permalink (index $nearestFuturePage 0).Permalink }}
+{{ $currentSubscriptionSeries := eq $performanceYear $currentYear }}
 
 {{ $image := .Resources.GetMatch "hero.jpg" }}
 
 {{ if $image }}
 <div class="hero-image hero-image-gradient">
-    {{ $image := $image.Process "fill 1200x420 smart" }}
+
+    {{ $heroImageOptions := default "fill 1200x420 smart" .Params.heroImageOptions }}
+    {{ $image := $image.Process $heroImageOptions }}
+
     {{ with $image }}
 
     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
@@ -29,15 +36,9 @@
 
 <div class="next-performance">
 
-
-    {{ $performanceDate := .Params.performanceDate | time }}
-    {{ $currentYear := now.Year }}
-    {{ $performanceYear := $performanceDate.Year }}
-
-
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
-            {{ if eq $performanceYear $currentYear }}
+            {{ if $currentSubscriptionSeries }}
             {{ $performanceDate | dateFormat "Monday January 2" }}
             {{ else }}
             {{ $performanceDate | dateFormat "Monday January 2 2006" }}
@@ -59,13 +60,16 @@
         <h5 class="mt-2 font-semibold director">Directed by {{ .Params.director }}</h5>
         {{ end }}
 
-        {{/* Display time and ticketing details for the next concert only */}}
-        {{ if $isNextPerformance }}
+        {{/* Display time and ticketing details for concerts in the current year */}}
+        {{ if $currentSubscriptionSeries }}
 
         <div class="performance-details text-primary-content mt-7">
 
             <div class="performance-time font-medium">
-                {{ .Params.performanceTime }}
+                {{ .Params.performanceTime }}{{ if .Params.preconcertTalkTime }}, pre-concert talk {{
+                .Params.preconcertTalkTime }}
+                {{ end }}
+
             </div>
 
             <div class="venue mt-2">
@@ -75,9 +79,11 @@
             <div class="ticket-prices mt-4"> {{ .Params.ticketPrices }} </div>
         </div>
 
+        {{ if .Params.ticketUrl }}
         <a href="{{ .Params.ticketUrl }}">
             <button class="btn rounded-md mt-8" style="background: {{ $accentColour }}">Tickets from Humanitix</button>
         </a>
+        {{ end }}
 
         {{ else }}
 
