@@ -1,9 +1,8 @@
----
-title: 'About'
-menu:
-  main:
-    weight: 10
----
++++
+title = "About"
+[menu.main]
+  weight = 10
++++
 
 The Tudor Consort is a specialist early choral group based in Wellington, New Zealand. It is made up of the region’s finest choral singers, and depending on repertoire can range in size from 5 to 25 members. The group was formed in 1986 by Simon Ravens with the intention of performing lesser-known choral music from the late Medieval and Renaissance periods, laying special emphasis on English sixteenth century music. The repertoire performed by the Consort made it, in the words of the local media of the time, “a unique group in New Zealand”.  
 
