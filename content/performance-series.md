@@ -1,5 +1,5 @@
 ---
-title: '2025 performance series'
+title: '{{ .Now.Year }} performance series'
 menu:
   main:
     weight: 20
