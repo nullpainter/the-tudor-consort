@@ -1,5 +1,5 @@
 ---
-title: '{{ .Now.Year }} performance series'
+title: '{{ .Now.Year }} season'
 menu:
   main:
     weight: 20
