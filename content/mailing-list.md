@@ -1,8 +1,8 @@
 ---
-title: 'Mailing list'
+title: 'Connect'
 menu:
   main:
-    weight: 25
+    weight: 35
 type: 'mailing-list'
 ---
 
