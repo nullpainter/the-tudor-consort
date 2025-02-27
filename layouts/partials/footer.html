@@ -1,22 +1,27 @@
 <footer class="footer bg-base-100 text-base-content p-10 mt-20">
     <aside>
         <a href="/">
-            <img src="/images/tc-logo.svg" alt="">
-            <p class="mt-4">
-                © {{ now.Format "2006" }} The Tudor Consort
-            </p>
+            <img src="/images/tc-logo.svg" alt="" width="130px" />
+
+
         </a>
     </aside>
 
     {{ $menuItems := .Site.Menus.main }}
-    {{ $chunkSize := 3 }}
-    {{ $chunks := (apply (seq 0 (div (add (len $menuItems) (sub $chunkSize 1)) $chunkSize)) "slice" $menuItems $chunkSize) }}
+    {{ $i := 0 }}
+    <nav>
 
-    {{ range $chunks }}
-        <nav>
-            {{ range . }}
-                <a class="link link-hover" href="{{ .URL }}">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</a>
-            {{ end }}
-        </nav>
-    {{ end }}
+        {{ range $menuItems }}
+        <a class="link link-hover" href="{{ .URL }}">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</a>
+        {{ $i = add $i 1 }}
+
+        {{ if (eq (mod $i 3) 0) }}
+    </nav>
+    <nav>
+        {{ end }}
+
+        {{ end }}
+    </nav>
+    <p style="line-height:130px;"> © {{ now.Format "2006" }} The Tudor Consort </p>
+
 </footer>
