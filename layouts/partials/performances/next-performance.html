@@ -5,7 +5,7 @@
 
 {{ range $nearestFuturePage }}
 
-<a href="{{ .Permalink }}" class="no-underline">
+<a href="{{ .Permalink }}" class="no-underline mb-20">
     <div class="relative next-performance">
 
         <div class="absolute mt-10 ms-6">
@@ -23,7 +23,7 @@
             <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
             {{ end }}
 
-            <h6 class="mt-3 text-lg">Directed by {{ .Params.director }}</h6>
+            <h6 class="mt-3 text-lg director">Directed by {{ .Params.director }}</h6>
         </div>
 
 

@@ -20,6 +20,9 @@
 
         <div class="relative next-performance">
 
+            {{ $accentColour := .Params.accentColour }}
+            {{ $image := .Resources.GetMatch "hero.jpg" }}
+
             <div class="absolute mt-10 ms-6">
 
                 <h5 class="mt-2 mb-2 font-normal text-primary-content">
@@ -40,13 +43,20 @@
                     {{ .Summary }}
                 </div>
 
+                {{/* Derive accent colour if not set */}}
+                {{ if and (not $accentColour) $image }}
+                {{ $colours := $image.Colors }}
+                {{ $colours = sort $colours "Luminance" }}
+                {{ $accentColour = index $colours 1 }}
+                {{ end }}
+
                 <a href="{{ .Params.ticketUrl }}">
-                    <button class="btn rounded-md btn-secondary mt-6">Tickets from Humanitix</button>
+                    <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Tickets from
+                        Humanitix</button>
                 </a>
             </div>
 
             {{/* Hero image */}}
-            {{ $image := .Resources.GetMatch "hero.jpg" }}
             <div class="hero-image hero-image-gradient">
                 {{ if $image }}
 
