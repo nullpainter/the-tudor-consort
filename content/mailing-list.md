@@ -1,5 +1,5 @@
 ---
-title: 'Subscribe to mailing list'
+title: 'Mailing list'
 menu:
   main:
     weight: 25
