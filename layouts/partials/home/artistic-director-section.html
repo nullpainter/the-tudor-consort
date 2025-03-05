@@ -1,0 +1,24 @@
+<div class="grid grid-cols-2 gap-4 mt-20">
+    <div>
+        {{ $image := .Resources.GetMatch "home/mike.jpg" }}
+        {{ $image := $image.Process "fill 1200x550 top" }}
+        {{ with $image }}
+        <img src="{{ .RelPermalink }}" alt="Michael Stewart" class="rounded-md" width="{{ $image.Width }}"
+            height="{{ $image.Height }}">
+        {{ end }}
+    </div>
+
+    <div class="prose ms-5">
+
+        <h1>Artistic Director</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+    </div>
+
+</div>
