@@ -8,6 +8,9 @@ module.exports = {
         extend: {
             colors: {
                 "secondary": "#6b615d",
+            },
+            fontFamily: {
+                sans: ['"Poppins"', 'sans-serif']
             }
         }
     },
