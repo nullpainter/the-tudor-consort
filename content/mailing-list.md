@@ -1,8 +1,8 @@
 ---
-title: 'Connect'
+title: 'Stay in touch'
 menu:
   main:
-    weight: 35
+    weight: 25
 type: 'mailing-list'
 ---
 

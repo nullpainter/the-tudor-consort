@@ -16,9 +16,9 @@
 
     {{ range $nearestFuturePage }}
 
-    <main class="w-full home cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
+    <main class="w-full home">
 
-        <div class="relative next-performance">
+        <div class="relative next-performance cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
 
             {{ $accentColour := .Params.accentColour }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
@@ -76,6 +76,13 @@
 
         </div>
         {{ end }}
+
+        {{/* About Tudor Consort */}}
+        <div class="m-10">
+            {{ partial "home/about-section.html" . }}
+        </div>
+
+
     </main>
     <footer>
         {{ partial "footer.html" . }}

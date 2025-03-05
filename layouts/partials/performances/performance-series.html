@@ -5,7 +5,7 @@
 
     {{ range $performanceSeries }}
 
-    <a href="{{ .Permalink }}" class="no-underline mb-10">
+    <a href="{{ .Permalink }}" class="no-underline">
         <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
             <div>
                 {{ if .Params.surTitle }}
@@ -37,6 +37,9 @@
                 {{ end }}
             </div>
 
+            <div style="flex-grow: 3" class="mt-4 mb-5">
+                {{ .Summary }}
+            </div>
         </div>
     </a>
     {{ end }}
