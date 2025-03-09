@@ -51,8 +51,7 @@
                 {{ end }}
 
                 <a href="{{ .Params.ticketUrl }}">
-                    <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Tickets from
-                        Humanitix</button>
+                    <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
                 </a>
             </div>
 
@@ -76,6 +75,12 @@
 
         </div>
         {{ end }}
+
+        {{/* Plaudits */}}
+        <div class="m-10 mt-20 mb-20">
+            {{ partial "home/plaudits-section.html" . }}
+        </div>
+
 
         {{/* About Tudor Consort */}}
         <div class="m-10 mt-20 mb-20">
