@@ -2,18 +2,20 @@
     <div class="prose">
 
         <h1>Tudor Consort</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
+        <p>Equally at home with ethereal renaissance polyphony and challenging works of the present day, The Tudor
+            Consort is one of New Zealand’s premier chamber choirs.</p>
+        <p>Since its inception forty years ago with founding Music Director Simon Ravens, The Tudor Consort has strived
+            for artistic excellence, authentic performance practice, and above all to move its audience through the art
+            form of a cappella choral music.</p>
+        <p>Prizewinners at two editions of the Tolosa International Choral Competition, other highlights of its history
+            have included critically-acclaimed performances of Handel’s <em>Messiah</em> and JS Bach’s <em>Christmas
+                Oratorio</em> and <em>St Matthew Passion.</em> The choir is regularly recorded and broadcast on Radio
+            New Zealand Concert, and is frequently invited to collaborate with the New Zealand Symphony Orchestra and
+            Orchestra Wellington.</p>
     </div>
     <div>
         {{ $image := .Resources.GetMatch "home/about.jpg" }}
-        {{ $image := $image.Process "fill 1200x500 smart" }}
+        {{ $image := $image.Process "fill 1200x750 smart" }}
         {{ with $image }}
         <img src="{{ .RelPermalink }}" alt="The Tudor Consort in performance" class="rounded-md"
             width="{{ $image.Width }}" height="{{ $image.Height }}">

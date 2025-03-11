@@ -18,7 +18,7 @@
 
     <main class="w-full home">
 
-        <div class="relative next-performance cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
+        <div class="next-performance cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
 
             {{ $accentColour := .Params.accentColour }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
@@ -77,7 +77,7 @@
         {{ end }}
 
         {{/* Plaudits */}}
-        <div class="m-10 mt-20 mb-20">
+        <div class="m-10 mt-32 mb-32">
             {{ partial "home/plaudits-section.html" . }}
         </div>
 
