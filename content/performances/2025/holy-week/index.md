@@ -10,6 +10,7 @@ Hill Street, Wellington
 """
 ticketPrices = "$30 / $20 / school children free"
 ticketUrl = "https://events.humanitix.com/holy-week"
+heroImageOptions = "fill 1200x420 TopLeft"
 +++
 
 
