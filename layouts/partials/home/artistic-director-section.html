@@ -1,5 +1,5 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
-    <div>
+    <div class="order-2 md:order-1">
         {{ $image := .Resources.GetMatch "home/mike.jpg" }}
         {{ $image := $image.Process "fill 1200x550 top" }}
         {{ with $image }}
@@ -8,8 +8,7 @@
         {{ end }}
     </div>
 
-    <div class="prose ms-5">
-
+    <div class="prose ms-5 order-1 md:order-2">
         <h1>Artistic Director</h1>
         <p>Michael Stewart is one of the foremost choral conductors in New Zealand, as well as being one of the
             country’s leading concert organists. Michael was appointed Music Director of The Tudor Consort in 2007,
