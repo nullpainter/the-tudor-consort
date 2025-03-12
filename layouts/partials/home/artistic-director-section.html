@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 gap-4 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
     <div>
         {{ $image := .Resources.GetMatch "home/mike.jpg" }}
         {{ $image := $image.Process "fill 1200x550 top" }}
