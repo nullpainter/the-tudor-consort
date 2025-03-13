@@ -26,9 +26,13 @@
             <h6 class="mt-3 text-lg director">Directed by {{ .Params.director }}</h6>
         </div>
 
-
         <div class="hero-image">
-            {{ $image := .Resources.GetMatch "hero.jpg" }}
+
+            {{/* Load small image, falling back to original */}}
+            {{ $image := .Resources.GetMatch "hero-small.jpg" }}
+            {{ if not $image }}
+            {{ $image = .Resources.GetMatch "hero.jpg" }}
+            {{ end }}
 
             {{ if $image }}
             {{ $image := $image.Process "fill 1200x420 smart" }}
