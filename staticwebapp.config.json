@@ -6,8 +6,9 @@
   },
   "routes": [
     {
-      "route": "www.tudor-consort.org.nz/*",
-      "redirect": "tudor-consort.org.nz"
+      "route": "https://www.tudor-consort.org.nz/*",
+      "redirect": "https://tudor-consort.org.nz",
+      "statusCode": 301
     }
   ]
 }
