@@ -9,6 +9,10 @@
 
 <form action="https://formsubmit.co/776f1c4623030438f95a932fa659612c" method="POST"
     class="max-w-lg p-4 shadow-md rounded-lg">
+
+    {{/* May not be necessary; seems required on Chrome on Android */}}
+    <input type="hidden" name="_url" value="https://tudor-consort.org.nz/contact">
+
     <div class="mb-4">
         <label for="name" class="block text-sm font-medium text-gray-200">Name</label>
         <input type="text" name="name" id="name" required autofocus
