@@ -3,12 +3,5 @@
     "404": {
       "rewrite": "/404.html"
     }
-  },
-  "routes": [
-    {
-      "route": "https://www.tudor-consort.org.nz/*",
-      "redirect": "https://tudor-consort.org.nz",
-      "statusCode": 301
-    }
-  ]
+  }
 }
