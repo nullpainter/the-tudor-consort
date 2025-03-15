@@ -9,14 +9,14 @@
       "route": "/*",
       "allowedRoles": [
         "anonymous"
-      ],
-      "redirects": [
-        {
-          "source": "https://www.tudor-consort.org.nz/*",
-          "destination": "https://tudor-consort.org.nz/*",
-          "statusCode": 301
-        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "https://www.tudor-consort.org.nz/*",
+      "destination": "https://tudor-consort.org.nz/$1",
+      "statusCode": 301
     }
   ]
 }
