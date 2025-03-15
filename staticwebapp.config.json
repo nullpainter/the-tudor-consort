@@ -6,7 +6,9 @@
   },
   "routes": [
     {
-      "route": "/*",
+      "route": "https://www.tudor-consort.org.nz/*",
+      "redirect": "https://tudor-consort.org.nz/$1",
+      "statusCode": 301,
       "allowedRoles": [
         "anonymous"
       ]
