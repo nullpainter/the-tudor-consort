@@ -3,5 +3,11 @@
     "404": {
       "rewrite": "/404.html"
     }
-  }
+  },
+  "routes": [
+    {
+      "route": "www.tudor-consort.org.nz/*",
+      "redirect": "tudor-consort.org.nz"
+    }
+  ]
 }
