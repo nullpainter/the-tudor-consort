@@ -2,6 +2,16 @@
   "responseOverrides": {
     "404": {
       "rewrite": "/404.html"
-    }
+    },
+    "customDomains": [
+      {
+        "domain": "www.tudor-consort.org.nz",
+        "primaryDomain": false,
+        "redirectConfig": {
+          "redirectType": "Permanent",
+          "targetDomain": "tudor-consort.org.nz"
+        }
+      }
+    ]
   }
 }
