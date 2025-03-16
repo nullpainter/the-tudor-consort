@@ -1,9 +1,4 @@
 {
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/404.html"
-    }
-  },
   "routes": [
     {
       "route": "/*",
@@ -16,7 +11,10 @@
     {
       "source": "/(.*)",
       "destination": "https://tudor-consort.org.nz/$1",
-      "statusCode": 301
+      "statusCode": 301,
+      "condition": {
+        "hostname": "www.tudor-consort.org.nz"
+      }
     }
   ]
 }
