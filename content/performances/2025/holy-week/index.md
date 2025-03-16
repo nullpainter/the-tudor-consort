@@ -8,7 +8,7 @@ venue = """
 Wellington Cathedral of St Paul  
 Hill Street, Wellington
 """
-ticketPrices = "$30 / $20 / school children free"
+ticketPrices = "$35 / $25 / school children free"
 ticketUrl = "https://events.humanitix.com/holy-week"
 heroImageOptions = "fill 1200x420 TopLeft"
 +++
