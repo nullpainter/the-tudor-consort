@@ -5,6 +5,9 @@ module.exports = {
         "./public/**/*.html"
     ],
     theme: {
+        container: {
+            padding: '2rem',
+        },
         extend: {
             colors: {
                 "secondary": "#6b615d",
