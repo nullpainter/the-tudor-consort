@@ -13,15 +13,17 @@
 {{ $image := .Resources.GetMatch "hero.jpg" }}
 
 {{ if $image }}
-<div class="hero-image hero-image-gradient">
+<div class="overflow-hidden">
+    <div class="hero-image hero-image-gradient">
 
-    {{ $heroImageOptions := default "fill 1200x420 smart" .Params.heroImageOptions }}
-    {{ $image := $image.Process $heroImageOptions }}
+        {{ $heroImageOptions := default "fill 1200x420 smart" .Params.heroImageOptions }}
+        {{ $image := $image.Process $heroImageOptions }}
 
-    {{ with $image }}
+        {{ with $image }}
 
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
-    {{ end }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+        {{ end }}
+    </div>
 </div>
 {{ end }}
 
