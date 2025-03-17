@@ -1,7 +1,7 @@
 {{ $performancePages := sort .Pages "Params.performanceDate" }}
 {{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
 
-<div class="grid grid-cols-2 gap-4 performance-series">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 performance-series">
 
     {{ range $performanceSeries }}
 
