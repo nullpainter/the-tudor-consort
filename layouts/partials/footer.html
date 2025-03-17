@@ -9,19 +9,22 @@
 
     {{ $menuItems := .Site.Menus.main }}
     {{ $i := 0 }}
-    <nav>
 
+    <nav>
         {{ range $menuItems }}
         <a class="link link-hover" href="{{ .URL }}">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</a>
         {{ $i = add $i 1 }}
 
-        {{ if (eq (mod $i 3) 0) }}
+        {{/* {{ if (eq (mod $i 3) 0) }}
+
+        {{ end }} */}}
+        {{ if eq (mod $i 3) 0 }}
     </nav>
     <nav>
         {{ end }}
-
         {{ end }}
-    </nav>
-    <p style="line-height:130px;"> © {{ now.Format "2006" }} The Tudor Consort </p>
+
+
+        <p class="md:leading-[130px]"> © {{ now.Format "2006" }} The Tudor Consort </p>
 
 </footer>
