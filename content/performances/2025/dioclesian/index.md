@@ -2,7 +2,6 @@
 title = "Dioclesian"
 surTitle = "Henry Purcell’s"
 subTitle = "With The Queen's Closet"
-director = "Michael Stewart"
 summary = ""
 performanceDate = 2025-05-31
 performanceTime = "7:30pm"
