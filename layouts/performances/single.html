@@ -41,9 +41,29 @@
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
             {{ if $currentSubscriptionSeries }}
-            {{ $performanceDate | dateFormat "Monday January 2" }}
+            {{ if .Params.performanceDates }}
+            {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+            {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+            {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) | dateFormat
+            "Monday January 2"}}
+
             {{ else }}
-            {{ $performanceDate | dateFormat "Monday January 2 2006" }}
+            {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+            {{ end }}
+
+            {{ else }}
+            {{ if .Params.performanceDates }}
+
+            {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+            {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+            {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) | dateFormat
+            "Monday January 2 2006"}}
+
+            {{ else }}
+            {{ .Params.performanceDate | dateFormat "Monday January 2 2006" }}
+            {{ end }}
             {{ end }}
         </h5>
 
@@ -54,7 +74,8 @@
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
         {{ if .Params.subTitle }}
-        <h3 class="mt-1 mb-2 font-semibold text-secondary" style="color: {{ $accentColour }}">{{ .Params.subtitle}}</h3>
+        <h3 class="mt-1 mb-6 font-semibold subtitle text-secondary" style="color: {{ $accentColour }}">{{
+            .Params.subtitle}}</h3>
         {{ end }}
 
 

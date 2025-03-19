@@ -26,7 +26,18 @@
             <div class="absolute mt-10 ms-6 me-6">
 
                 <h5 class="mt-20 mb-2 font-normal text-primary-content">
-                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
+                    {{ if .Params.performanceDates }}
+                    {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+                    {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+                    {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) |
+                    dateFormat
+                    "Monday January 2"}}
+
+                    {{ else }}
+                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+                    {{ end }}
+                </h5>
 
                 {{ if .Params.surTitle }}
                 <h2 class="font-semibold mt-14 mb-0">{{ .Params.surTitle }}</h2>
@@ -34,14 +45,6 @@
 
                 <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
-                {{ if .Params.subTitle }}
-                <h3 class="mt-1 mb-0 font-semibold text-secondary">{{ .Params.subtitle}}</h3>
-                {{ end }}
-
-
-                <div class="performance-summary mt-5">
-                    {{ .Summary }}
-                </div>
 
                 {{/* Derive accent colour if not set */}}
                 {{ if and (not $accentColour) $image }}
@@ -49,6 +52,17 @@
                 {{ $colours = sort $colours "Luminance" }}
                 {{ $accentColour = index $colours 1 }}
                 {{ end }}
+
+                {{ if .Params.subTitle }}
+                <h3 class="mt-1 mb-2 font-semibold subtitle text-secondary" style="color: {{ $accentColour }}">
+                    {{.Params.subtitle}}</h3>
+                {{ end }}
+
+
+                <div class="performance-summary mt-5">
+                    {{ .Summary }}
+                </div>
+
 
                 <a href="{{ .Params.ticketUrl }}">
                     <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
