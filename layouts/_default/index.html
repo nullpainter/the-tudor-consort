@@ -19,7 +19,7 @@
 
     <main class="w-full home">
 
-        <div class="next-performance cursor-pointer grid relative" onclick="location.href='{{ .Permalink }}' ;">
+        <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .Permalink }}' ;">
 
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
@@ -46,7 +46,7 @@
                 {{ end }}
             </div>
 
-            <div class="z-50 mt-10 ms-6 me-6 home-details relative" style="grid-area: 1 / 1">
+            <div class="z-50 mt-10 ms-6 me-6 home-details" style="grid-area: 1 / 1">
 
                 <h5 class="mt-10 mb-2 font-normal text-primary-content">
                     {{ partial "performances/date-range.html" . }}
