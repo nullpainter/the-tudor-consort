@@ -1,9 +1,7 @@
-{{ $performancePages := sort .Pages "Params.performanceDate" }}
-{{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
+{{ $performanceSeries := site.Store.Get "performanceSeries" }}
+{{ $nearestFuturePage := index $performanceSeries 0 }}
 
-{{ $nearestFuturePage := first 1 $performancePages }}
-
-{{ range $nearestFuturePage }}
+{{ with $nearestFuturePage }}
 
 {{/* Load small image, falling back to original */}}
 {{ $image := .Resources.GetMatch "hero-small.jpg" }}
@@ -19,14 +17,8 @@
         <div class="absolute mt-10 ms-6 me-6">
 
             <h5 class="mt-2 mb-2 font-semibold text-primary-content">
-                {{ .Params.performanceDate | dateFormat "Monday January 2" }}</h5>
-
-            {{ if .Params.surTitle }}
-            <h2 class="font-semibold mt-4 mb-0">{{ .Params.surTitle }}</h2>
-            {{ end }}
-
-            <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
-
+                {{ partial "performances/date-range.html" . }}
+            </h5>
             {{/* Derive accent colour if not set */}}
             {{ if and (not $accentColour) $image }}
             {{ $colours := $image.Colors }}
@@ -34,19 +26,28 @@
             {{ $accentColour = index $colours 1 }}
             {{ end }}
 
+            {{ if .Params.surTitle }}
+            <h2 class="font-semibold mt-8 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>
+            {{ end }}
+
+            <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
+
+
             {{ if .Params.subTitle }}
             <h3 class="mt-1 mb-2 font-semibold text-secondary subtitle" style="color: {{ $accentColour }}">
                 {{.Params.subTitle}}
                 {{ end }}
 
+                {{ if .Params.director }}
                 <h6 class="mt-3 text-lg director">Directed by {{ .Params.director }}</h6>
+                {{ end }}
         </div>
 
         <div class="hero-image hero-image-gradient">
 
 
             {{ if $image }}
-            {{ $image := $image.Process "fill 1200x420 smart" }}
+            {{ $image := $image.Process "fill 1200x500 smart" }}
             {{ with $image }}
             <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
             {{ end }}

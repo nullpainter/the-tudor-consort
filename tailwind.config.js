@@ -10,7 +10,7 @@ module.exports = {
         },
         extend: {
             colors: {
-                "secondary": "#6b615d",
+                "secondary": "rgb(33 129 167)",
             },
             fontFamily: {
                 sans: ['"Poppins"', 'sans-serif']

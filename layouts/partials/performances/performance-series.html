@@ -1,5 +1,4 @@
-{{ $performancePages := sort .Pages "Params.performanceDate" }}
-{{ $performanceSeries := where $performancePages "Params.performanceDate" "ge" now }}
+{{ $performanceSeries := site.Store.Get "performanceSeries" }}
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 performance-series">
 
@@ -18,17 +17,7 @@
                 {{ end }}
 
                 <h4 class="mt-2 mb-3">
-                    {{ if .Params.performanceDates }}
-                    {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
-                    {{ $latestDate := last 1 (sort .Params.performanceDates) }}
-
-                    {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) |
-                    dateFormat
-                    "Monday January 2"}}
-
-                    {{ else }}
-                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}
-                    {{ end }}
+                    {{ partial "performances/date-range.html" . }}
                 </h4>
             </div>
             <div class="figure-container">
