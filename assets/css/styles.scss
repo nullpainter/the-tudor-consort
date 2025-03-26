@@ -14,6 +14,7 @@ div.next-performance {
 main.home {
     div.next-performance {
 
+        grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
         overflow: hidden;
 
         h1 {
