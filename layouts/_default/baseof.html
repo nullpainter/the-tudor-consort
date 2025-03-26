@@ -5,9 +5,23 @@
     {{ partial "head.html" . }}
 </head>
 
-{{/* Create variables in page store for each page by the earliest performance date, and performance year */}}
 {{ range site.Pages }}
 
+{{/* Store text accent colour */}}
+{{ $accentColour := .Params.accentColour }}
+{{ $image := .Resources.GetMatch "hero.jpg" }}
+
+{{/* Derive accent colour if not set */}}
+{{ if and (not $accentColour) $image }}
+{{ $colours := $image.Colors }}
+{{ $colours = sort $colours "Luminance" }}
+{{ $accentColour = index $colours 1 }}
+{{ end }}
+
+{{ .Store.Set "accentColour" $accentColour }}
+
+
+{{/* Create variables in page store for each page by the earliest performance date, and performance year */}}
 {{ if .Params.performanceDate }}
 {{ .Store.Set "sortDate" .Params.performanceDate }}
 {{ end }}
