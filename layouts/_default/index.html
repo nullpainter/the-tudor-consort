@@ -10,7 +10,7 @@
         {{ partial "header.html" . }}
     </header>
 
-    {{ partial "store.html" . }}
+    {{ partial "stores.html" . }}
 
     {{ $performanceSeries := site.Store.Get "performanceSeries" }}
     {{ $nearestFuturePage := index $performanceSeries 0 }}
