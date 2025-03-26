@@ -9,11 +9,12 @@
     <header>
         {{ partial "header.html" . }}
     </header>
+    {{ $performancePages := sort site.Pages "Params.performanceDate" }}
+    {{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
 
-    {{ $performanceSeries := site.Store.Get "performanceSeries" }}
-    {{ $nearestFuturePage := index $performanceSeries 0 }}
+    {{ $nearestFuturePage := first 1 $performancePages }}
 
-    {{ with $nearestFuturePage }}
+    {{ range $nearestFuturePage }}
 
     <main class="w-full home">
 
@@ -22,11 +23,27 @@
             {{ $accentColour := .Params.accentColour }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
-            <div class="absolute mt-10 ms-6 me-6 home-details">
+            <div class="absolute mt-10 ms-6 me-6">
 
                 <h5 class="mt-20 mb-2 font-normal text-primary-content">
-                    {{ partial "performances/date-range.html" . }}
+                    {{ if .Params.performanceDates }}
+                    {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+                    {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+                    {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) |
+                    dateFormat
+                    "Monday January 2"}}
+
+                    {{ else }}
+                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+                    {{ end }}
                 </h5>
+
+                {{ if .Params.surTitle }}
+                <h2 class="font-semibold mt-14 mb-0">{{ .Params.surTitle }}</h2>
+                {{ end }}
+
+                <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
 
 
                 {{/* Derive accent colour if not set */}}
@@ -35,14 +52,6 @@
                 {{ $colours = sort $colours "Luminance" }}
                 {{ $accentColour = index $colours 1 }}
                 {{ end }}
-
-
-                {{ if .Params.surTitle }}
-                <h2 class="font-semibold mt-14 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>
-                {{ end }}
-
-                <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
-
 
                 {{ if .Params.subTitle }}
                 <h3 class="mt-1 mb-2 font-semibold subtitle text-secondary" style="color: {{ $accentColour }}">

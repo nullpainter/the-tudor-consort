@@ -1,14 +1,13 @@
 {{ define "main" }}
 
+{{ $performanceDate := .Params.performanceDate | time }}
 {{ $currentYear := now.Year }}
-
-{{ $performanceDate := .Store.Get "sortDate" | time }}
 {{ $performanceYear := $performanceDate.Year }}
 
-{{ $performanceSeries := site.Store.Get "performanceSeries" }}
-{{ $nearestFuturePage := index $performanceSeries 0 }}
-
-{{ $isNextPerformance := eq .Permalink $nearestFuturePage.Permalink }}
+{{ $performancePages := sort .Site.Pages "Params.performanceDate" }}
+{{ $performancePages := where $performancePages "Params.performanceDate" "gt" now }}
+{{ $nearestFuturePage := first 1 $performancePages }}
+{{ $isNextPerformance := eq .Permalink (index $nearestFuturePage 0).Permalink }}
 {{ $currentSubscriptionSeries := eq $performanceYear $currentYear }}
 
 {{ $image := .Resources.GetMatch "hero.jpg" }}
@@ -41,11 +40,35 @@
 
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
-            {{ partial "performances/date-range.html" . }}
+            {{ if $currentSubscriptionSeries }}
+            {{ if .Params.performanceDates }}
+            {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+            {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+            {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) | dateFormat
+            "Monday January 2"}}
+
+            {{ else }}
+            {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+            {{ end }}
+
+            {{ else }}
+            {{ if .Params.performanceDates }}
+
+            {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+            {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+            {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) | dateFormat
+            "Monday January 2 2006"}}
+
+            {{ else }}
+            {{ .Params.performanceDate | dateFormat "Monday January 2 2006" }}
+            {{ end }}
+            {{ end }}
         </h5>
 
         {{ if .Params.surTitle }}
-        <h2 class="font-semibold mt-8 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>
+        <h2 class="font-semibold mt-4 mb-0">{{ .Params.surTitle }}</h2>
         {{ end }}
 
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>
@@ -57,7 +80,7 @@
 
 
         {{ if .Params.director }}
-        <h5 class="mt-2 mb-6 font-semibold director">Directed by {{ .Params.director }}</h5>
+        <h5 class="mt-2 font-semibold director">Directed by {{ .Params.director }}</h5>
         {{ end }}
 
         {{/* Display time and ticketing details for concerts in the current year */}}

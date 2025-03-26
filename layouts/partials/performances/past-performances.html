@@ -22,7 +22,17 @@
                 <h2 class="card-title mb-0 font-extrabold">{{ .Title }}</h2>
                 <span class="text-gray-400 leading-5">{{ .Params.subtitle }}&nbsp;</span>
                 <h4 class="mt-2 mb-3">
-                    {{ partial "performances/date-range.html" . }}
+                    {{ if .Params.performanceDates }}
+                    {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
+                    {{ $latestDate := last 1 (sort .Params.performanceDates) }}
+
+                    {{ (index $earliestDate 0) | dateFormat " Monday January 2"}} &mdash; {{ (index $latestDate 0) |
+                    dateFormat
+                    "Monday January 2"}}
+
+                    {{ else }}
+                    {{ .Params.performanceDate | dateFormat "Monday January 2" }}
+                    {{ end }}
                 </h4>
             </div>
             <div class="figure-container">
