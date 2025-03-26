@@ -1,0 +1,18 @@
+{{ range site.Pages }}
+
+{{ if .Params.performanceDate }}
+{{ .Store.Set "sortDate" .Params.performanceDate }}
+{{ end }}
+
+{{ if .Params.performanceDates }}
+{{ $earliestDate := index (first 1 (sort .Params.performanceDates)) 0 }}
+{{ .Store.Set "sortDate" $earliestDate }}
+{{ end }}
+
+{{ $sortDate := .Store.Get "sortDate" }}
+
+{{ if $sortDate }}
+{{ .Store.Set "performanceYear" $sortDate.Year }}
+{{ end }}
+
+{{ end }}

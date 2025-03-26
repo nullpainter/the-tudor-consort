@@ -1,0 +1,17 @@
+{{/* Create dictionary of performance pages, keyed by earliest performance date */}}
+{{ $performancePages := dict }}
+{{ range site.Pages }}
+{{ $sortDate := string (.Store.Get "sortDate") }}
+{{ if $sortDate }}
+{{ $performancePages = merge $performancePages (dict $sortDate .) }}
+{{ end }}
+{{ end }}
+
+{{ $sortedPerformancePages := slice }}
+
+{{ range $key, $value := $performancePages }}
+{{ $sortedPerformancePages = $sortedPerformancePages | append $value }}
+{{ end }}
+
+{{ site.Store.Set "performancePages" $sortedPerformancePages }}
+{{ site.Store.Set "groupedPerformancePages" $performancePages }}

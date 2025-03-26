@@ -1,0 +1,17 @@
+{{ $currentYear := now.Year }}
+{{ $sortedPerformancePages := slice }}
+{{ $performanceSeries := slice }}
+
+{{ $performancePages := site.Store.Get "groupedPerformancePages" }}
+
+
+{{ range $key, $value := $performancePages }}
+{{ $sortedPerformancePages = $sortedPerformancePages | append $value }}
+
+{{ if eq ($key | time).Year $currentYear }}
+{{ $performanceSeries = $performanceSeries | append $value }}
+{{ end }}
+{{ end }}
+
+
+{{ site.Store.Set "performanceSeries" $performanceSeries }}
