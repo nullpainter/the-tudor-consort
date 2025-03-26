@@ -1,0 +1,56 @@
+{{/* Create variables in page store for each page by the earliest performance date, and performance year */}}
+{{ range site.Pages }}
+
+{{/* Store text accent colour */}}
+{{ $accentColour := .Params.accentColour }}
+{{ $image := .Resources.GetMatch "hero.jpg" }}
+
+{{/* Derive accent colour if not set */}}
+{{ if and (not $accentColour) $image }}
+{{ $colours := $image.Colors }}
+{{ $colours = sort $colours "Luminance" }}
+{{ $accentColour = index $colours 1 }}
+{{ end }}
+
+{{ .Store.Set "accentColour" $accentColour }}
+
+{{ if .Params.performanceDate }}
+{{ .Store.Set "sortDate" .Params.performanceDate }}
+{{ end }}
+{{ if .Params.performanceDates }}
+{{ $earliestDate := index (first 1 (sort .Params.performanceDates)) 0 }}
+{{ .Store.Set "sortDate" $earliestDate }}
+{{ end }}
+{{ $sortDate := .Store.Get "sortDate" }}
+{{ if $sortDate }}
+{{ .Store.Set "performanceYear" $sortDate.Year }}
+{{ end }}
+
+{{ end }}
+
+{{/* Create dictionary of performance pages, keyed by earliest performance date */}}
+{{ $performancePages := dict }}
+{{ range site.Pages }}
+{{ $sortDate := string (.Store.Get "sortDate") }}
+{{ if $sortDate }}
+{{ $performancePages = merge $performancePages (dict $sortDate .) }}
+{{ end }}
+{{ end }}
+
+
+{{ $currentYear := now.Year }}
+{{ $sortedPerformancePages := slice }}
+{{ $performanceSeries := slice }}
+
+{{ range $key, $value := $performancePages }}
+
+{{ $sortedPerformancePages = $sortedPerformancePages | append $value }}
+
+{{ if eq ($key | time).Year $currentYear }}
+{{ $performanceSeries = $performanceSeries | append $value }}
+{{ end }}
+{{ end }}
+
+
+{{ site.Store.Set "performancePages" $sortedPerformancePages }}
+{{ site.Store.Set "performanceSeries" $performanceSeries }}
