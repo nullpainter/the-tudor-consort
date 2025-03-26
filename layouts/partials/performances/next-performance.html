@@ -9,7 +9,7 @@
 {{ $image = .Resources.GetMatch "hero.jpg" }}
 {{ end }}
 
-{{ $accentColour := .Store.Get "accentColour" }}
+{{ $accentColour := .Params.accentColour }}
 
 <a href="{{ .Permalink }}" class="no-underline mb-20">
     <div class="relative next-performance">
@@ -19,7 +19,12 @@
             <h5 class="mt-2 mb-2 font-semibold text-primary-content">
                 {{ partial "performances/date-range.html" . }}
             </h5>
-
+            {{/* Derive accent colour if not set */}}
+            {{ if and (not $accentColour) $image }}
+            {{ $colours := $image.Colors }}
+            {{ $colours = sort $colours "Luminance" }}
+            {{ $accentColour = index $colours 1 }}
+            {{ end }}
 
             {{ if .Params.surTitle }}
             <h2 class="font-semibold mt-8 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>

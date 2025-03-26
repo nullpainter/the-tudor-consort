@@ -28,7 +28,14 @@
 </div>
 {{ end }}
 
-{{ $accentColour := .Store.Get "accentColour" }}
+{{ $accentColour := .Params.accentColour }}
+
+{{/* Derive accent colour if not set */}}
+{{ if and (not $accentColour) $image }}
+{{ $colours := $image.Colors }}
+{{ $colours = sort $colours "Luminance" }}
+{{ $accentColour = index $colours 1 }}
+{{ end }}
 
 <div class="next-performance">
 

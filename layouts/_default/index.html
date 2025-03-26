@@ -19,7 +19,7 @@
 
         <div class="next-performance cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
 
-            {{ $accentColour := .Store.Get "accentColour" }}
+            {{ $accentColour := .Params.accentColour }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
             <div class="absolute mt-10 ms-6 me-6 home-details">
@@ -27,6 +27,14 @@
                 <h5 class="mt-20 mb-2 font-normal text-primary-content">
                     {{ partial "performances/date-range.html" . }}
                 </h5>
+
+
+                {{/* Derive accent colour if not set */}}
+                {{ if and (not $accentColour) $image }}
+                {{ $colours := $image.Colors }}
+                {{ $colours = sort $colours "Luminance" }}
+                {{ $accentColour = index $colours 1 }}
+                {{ end }}
 
 
                 {{ if .Params.surTitle }}
