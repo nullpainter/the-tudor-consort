@@ -58,14 +58,14 @@
 
         <div class="performance-details text-primary-content mt-7">
 
-            <div class="performance-time font-medium">
+            <div class="performance-time font-medium mb-6">
                 {{ .Params.performanceTime }}{{ if .Params.preconcertTalkTime }}, pre-concert talk {{
                 .Params.preconcertTalkTime }}
                 {{ end }}
 
             </div>
 
-            <div class="venue mt-2">
+            <div class="venue mt-6">
                 {{ .Params.venue | markdownify }}
             </div>
 

@@ -13,12 +13,14 @@
                 <h2 class="card-title mt-0 mb-0 font-extrabold">{{ .Title }}</h2>
 
                 {{ if .Params.subtitle }}
-                <span class="text-gray-400 leading-5 subtitle mt-2">{{ .Params.subtitle }}&nbsp;</span>
+                <span class="text-gray-400 leading-5 subtitle">{{ .Params.subtitle }}&nbsp;</span>
                 {{ end }}
 
-                <h4 class="mt-2 mb-3">
-                    {{ partial "performances/date-range.html" . }}
-                </h4>
+                <div class="mt-3 mb-3">
+                    <h4 class="mt-0">
+                        {{ partial "performances/date-range.html" . }}
+                    </h4>
+                </div>
             </div>
             <div class="figure-container">
 
