@@ -19,17 +19,38 @@
 
     <main class="w-full home">
 
-        <div class="next-performance cursor-pointer" onclick="location.href='{{ .Permalink }}' ;">
+        <div class="next-performance cursor-pointer grid relative" onclick="location.href='{{ .Permalink }}' ;">
 
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
-            <div class="absolute mt-10 ms-6 me-6 home-details">
+
+            {{/* Hero image */}}
+            <div class="hero-image hero-image-gradient" style="grid-area: 1 / 1">
+                {{ if $image }}
+
+                {{ $width := $image.Width }}
+
+                {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }}
+                {{ $image := $image.Process "fill 2500x1200 top" }}
+
+
+                {{ with $image }}
+
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                {{ end }}
+                {{ else }}
+                <figure class="m-0">
+                    <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
+                </figure>
+                {{ end }}
+            </div>
+
+            <div class="z-50 mt-10 ms-6 me-6 home-details relative" style="grid-area: 1 / 1">
 
                 <h5 class="mt-20 mb-2 font-normal text-primary-content">
                     {{ partial "performances/date-range.html" . }}
                 </h5>
-
 
                 {{ if .Params.surTitle }}
                 <h2 class="font-semibold mt-14 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>
@@ -54,26 +75,6 @@
                 </a>
             </div>
 
-            {{/* Hero image */}}
-            <div class="hero-image hero-image-gradient">
-                {{ if $image }}
-
-                {{ $width := $image.Width }}
-
-                {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }}
-                {{ $image := $image.Process "fill 2500x1200 top" }}
-
-
-                {{ with $image }}
-
-                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-                {{ end }}
-                {{ else }}
-                <figure class="m-0">
-                    <div class="rounded-md bg-slate-950" style="width:1200px; height:420px"></div>
-                </figure>
-                {{ end }}
-            </div>
 
         </div>
         {{ end }}
