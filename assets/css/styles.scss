@@ -14,7 +14,6 @@ div.next-performance {
 main.home {
     div.next-performance {
 
-        grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
         overflow: hidden;
 
         h1 {
@@ -105,7 +104,6 @@ main.home {
     }
 }
 
-
 .card {
     display: flex;
     flex-direction: column;
@@ -114,11 +112,19 @@ main.home {
 }
 
 .figure-container {
-    display: flex;
     justify-content: left;
     align-items: flex-end;
-}
 
-.figure-container figure {
-    margin: 0;
+    div.placeholder-image {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: auto 600 / 400;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+
+    }
+
+    figure {
+        margin: 0;
+    }
 }

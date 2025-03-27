@@ -4,8 +4,8 @@
 
     {{ range $performanceSeries }}
 
-    <a href="{{ .Permalink }}" class="no-underline mb-10">
-        <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
+    <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
+        <a href="{{ .Permalink }}" class="no-underline mb-10">
             <div>
                 {{ if .Params.surTitle }}
                 <span class="surtitle font-bold">{{ .Params.surTitle }}&nbsp;</span>
@@ -21,29 +21,31 @@
                         {{ partial "performances/date-range.html" . }}
                     </h4>
                 </div>
-            </div>
-            <div class="figure-container">
+        </a>
+    </div>
+    <div class="figure-container">
+        <a href="{{ .Permalink }}" class="no-underline mb-10">
 
-                {{/* Render the image if present, otherwise display a generic spacer */}}
-                {{ $image := .Resources.GetMatch "hero.jpg" }}
-                {{ if $image }}
-                {{ $image := $image.Process "fill 600x400 smart" }}
-                {{ with $image }}
-                <figure class="m-0">
-                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
-                </figure>
-                {{ end }}
-                {{ else }}
-                <figure class="m-0">
-                    <div class="rounded-md bg-slate-950" style="width:600px; height:400px"></div>
-                </figure>
-                {{ end }}
-            </div>
-            {{/*
-            <div style="flex-grow: 3" class="mt-4 mb-5">
-                {{ .Summary }}
-            </div> */}}
-        </div>
-    </a>
-    {{ end }}
+            {{/* Render the image if present, otherwise display a generic spacer */}}
+            {{ $image := .Resources.GetMatch "hero.jpg" }}
+            {{ if $image }}
+            {{ $image := $image.Process "fill 600x400 smart" }}
+            {{ with $image }}
+            <figure class="m-0">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+            </figure>
+            {{ end }}
+            {{ else }}
+            <figure class="m-0">
+                <div class="bg-slate-950 rounded-md placeholder-image" style="width:600px" />
+            </figure>
+            {{ end }}
+        </a>
+    </div>
+    {{/*
+    <div style="flex-grow: 3" class="mt-4 mb-5">
+        {{ .Summary }}
+    </div> */}}
+</div>
+{{ end }}
 </div>
