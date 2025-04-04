@@ -6,7 +6,9 @@
 {{ $performanceYear := $performanceDate.Year }}
 
 {{ $performanceSeries := site.Store.Get "performanceSeries" }}
-{{ $nearestFuturePage := index $performanceSeries 0 }}
+
+{{ $concertOffset := site.Params.concertOffset }}
+{{ $nearestFuturePage := index $performanceSeries $concertOffset }}
 
 {{ $isNextPerformance := eq .Permalink $nearestFuturePage.Permalink }}
 {{ $currentSubscriptionSeries := eq $performanceYear $currentYear }}
@@ -38,7 +40,15 @@
         </h5>
 
         {{ if .Params.surTitle }}
-        <h2 class="font-semibold mt-8 mb-0" style="color: {{ $accentColour }}">{{ .Params.surTitle }}</h2>
+
+        {{ $surTitleColour := $accentColour }}
+
+        {{/* Avoid too much secondary colour if the concert has both a subtitle and surtitle */}}
+        {{ if .Params.subTitle }}
+        {{ $surTitleColour = "#ffffff" }}
+        {{ end }}
+
+        <h2 class="font-semibold mt-8 mb-0" style="color: {{ $surTitleColour }}">{{ .Params.surTitle }}</h2>
         {{ end }}
 
         <h1 class="mb-0 mt-0 font-bold">{{ .Title }}</h1>

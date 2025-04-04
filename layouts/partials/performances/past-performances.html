@@ -1,5 +1,4 @@
 {{ $performancePages := sort .Pages "Params.performanceDate" "desc" }}
-{{ $nearestFuturePage := first 1 $performancePages }}
 
 {{ $pastPages := where $performancePages "Params.performanceDate" "lt" now }}
 {{ $groupedByYear := $pastPages.GroupByParamDate "performanceDate" "2006" }}

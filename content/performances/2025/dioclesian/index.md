@@ -9,6 +9,7 @@ performanceTimes = ["7pm", "5pm"]
 heroImage = "dioclesian.jpg"
 heroImageOptions = "fill 1200x420 Center"
 ticketUrl = "https://thequeenscloset.net/tickets-2/"
+accentColour = "#2181a7"
 venue = """
 Hunter Lounge  
 Victoria University	of Wellington  
