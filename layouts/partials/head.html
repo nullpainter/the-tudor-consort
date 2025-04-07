@@ -1,3 +1,5 @@
+{{ partialCached "head/analytics.html" . }}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" (replace .Title "{{ .Now.Year }}" (now.Format
