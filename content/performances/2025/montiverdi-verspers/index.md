@@ -10,5 +10,8 @@ venue = """
 St Mary of the Angels  
 Boulcott Street, Wellington
 """
+
+ticketPrices = "$20 - $50, school children free"
+ticketUrl = "https://events.humanitix.com/vespers"
 +++
 
