@@ -13,7 +13,10 @@
 {{ $isNextPerformance := eq .Permalink $nearestFuturePage.Permalink }}
 {{ $currentSubscriptionSeries := eq $performanceYear $currentYear }}
 
-{{ $image := .Resources.GetMatch "hero.jpg" }}
+{{ $image := .Resources.GetMatch "hero-small.jpg" }}
+{{ if not $image }}
+{{ $image = .Resources.GetMatch "hero.jpg" }}
+{{ end }}
 
 {{ if $image }}
 <div class="overflow-hidden">

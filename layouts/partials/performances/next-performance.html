@@ -7,9 +7,9 @@
 
 {{/* Load small image, falling back to original */}}
 {{ $image := .Resources.GetMatch "hero-small.jpg" }}
-{{ if not $image }}
+{{/* {{ if not $image }}
 {{ $image = .Resources.GetMatch "hero.jpg" }}
-{{ end }}
+{{ end }} */}}
 
 {{ $accentColour := .Store.Get "accentColour" }}
 
