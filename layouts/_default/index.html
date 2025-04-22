@@ -32,8 +32,8 @@
 
                 {{ $width := $image.Width }}
 
-                {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }}
-                {{ $image := $image.Process "fill 2500x1200 top" }}
+                {{/* {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }} */}}
+                {{ $image := $image.Process "fill 2500x1200 right" }}
 
 
                 {{ with $image }}
