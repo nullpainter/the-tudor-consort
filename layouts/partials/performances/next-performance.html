@@ -50,11 +50,19 @@
 
         <div class="hero-image hero-image-gradient">
 
-
             {{ if $image }}
+
+            {{ $heroBackground := "" }}
+            {{ if .Params.heroBackground }}
+            {{ $heroBackground = .Params.heroBackground }}
+            {{ end }}
+
             {{ $image := $image.Process "fill 1200x500 smart" }}
             {{ with $image }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+
+            <div style="background: {{ $heroBackground }}">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+            </div>
             {{ end }}
             {{ else }}
             <figure class="m-0">

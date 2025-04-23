@@ -25,20 +25,29 @@
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
-
             {{/* Hero image */}}
             <div class="hero-image hero-image-gradient" style="grid-area: 1 / 1">
                 {{ if $image }}
 
+                {{ $heroBackground := "" }}
+                {{ if .Params.heroBackground }}
+                {{ $heroBackground = .Params.heroBackground }}
+                {{ end }}
+
+
                 {{ $width := $image.Width }}
 
+                {{/* FIXME this seems to break if the image is less than 3000px? */}}
                 {{/* {{ $image := $image.Crop (printf "%dx%d smart" $width 3000) }} */}}
-                {{ $image := $image.Process "fill 2500x1200 right" }}
+
+                {{ $image := $image.Process "fill 2500x1200 top" }}
 
 
                 {{ with $image }}
 
-                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                <div style="background: {{ $heroBackground }}">
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+                </div>
                 {{ end }}
                 {{ else }}
                 <figure class="m-0">
