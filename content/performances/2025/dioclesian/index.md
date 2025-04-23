@@ -18,4 +18,4 @@ heroBackground = "radial-gradient(farthest-corner circle at 0% 100% in oklab, ok
 accentColour ="rgb(165, 59, 54)"
 +++
 
-We’re delighted to be collaborating once again with The Queen’s Closet, and with stage director Jacqui Coats, on this semi-staged production of Henry Purcell’s dramatick opera, The Prophetess or, The History of Dioclesian.  We aren’t aware that Dioclesian has ever been presented before in Põneke, so please join us at 7pm on Saturday 31 May 2025 at the Hunter Lounge at Te Herenga Waka – Victoria University of Wellington for this special event.
+We’re delighted to be collaborating once again with The Queen’s Closet, and with stage director Jacqui Coats, on this semi-staged production of Henry Purcell’s dramatick opera, The Prophetess or, The History of Dioclesian.  We aren’t aware that Dioclesian has ever been presented before in Põneke, so please join us at 7pm on Saturday 31 May 2025 or at 5pm on Sunday 1 June 2025 at the Hunter Lounge at Te Herenga Waka – Victoria University of Wellington for this special event.
