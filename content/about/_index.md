@@ -3,7 +3,7 @@ title = "About"
 layout = "about-us"
 
 [menu.main]
-  weight = 30
+  weight = 40
 +++
 
 Equally at home with ethereal renaissance polyphony and challenging works of the present day, The Tudor Consort is one of New Zealand’s premier chamber choirs.
