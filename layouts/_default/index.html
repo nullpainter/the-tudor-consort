@@ -13,8 +13,10 @@
     {{ partial "stores.html" . }}
 
     {{ $performanceSeries := site.Store.Get "performanceSeries" }}
+    {{ $futurePages := where $performanceSeries "Params.performanceDate" "gt" now }}
+
     {{ $concertOffset := site.Params.concertOffset }}
-    {{ $nearestFuturePage := index $performanceSeries $concertOffset }}
+    {{ $nearestFuturePage := index $futurePages $concertOffset }}
 
     {{ with $nearestFuturePage }}
 

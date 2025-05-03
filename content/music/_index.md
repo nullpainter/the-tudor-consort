@@ -1,5 +1,5 @@
 +++
 title = "Music"
 [menu.main]
-  weight = 15
+  weight = 25
 +++
