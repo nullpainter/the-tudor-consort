@@ -3,7 +3,7 @@
 {{ $pastPages := where $performancePages "Params.performanceDate" "lt" now }}
 {{ $groupedByYear := $pastPages.GroupByParamDate "performanceDate" "2006" }}
 
-<h1>Performance archive</h1>
+<h1>Past performances</h1>
 
 {{/* Display performances by year */}}
 {{ range $groupedByYear }}

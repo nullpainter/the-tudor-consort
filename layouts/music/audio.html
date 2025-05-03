@@ -1,0 +1,96 @@
+{{ define "main" }}
+
+<h1>Audio</h1>
+
+<p class="mb-10">
+    All recordings of The Tudor Consort are hosted by the <a
+        href="https://freemusicarchive.org/music/The_Tudor_Consort/">Free Music Archive</a> and are licensed under
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution</a>, allowing
+    for download and both commercial and personal reuse, provided attribution is given.
+</p>
+
+<h2>Select recordings</h2>
+
+<div class="mb-5">
+    <a href="https://freemusicarchive.org/music/The_Tudor_Consort/single/martin-kyrie/" class="no-underline">
+
+        <div class="card  lg:card-side  bg-base-100 w-50 flex flex-col justify-between h-full">
+
+            {{ $image := .Resources.GetMatch "martin-kyrie.jpg" }}
+            {{ $image := $image.Process "fill 150x150 smart" }}
+            {{ with $image }}
+            <figure class="m-0">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+            </figure>
+            {{ end }}
+
+            <div class="card-body pt-0">
+                <h2 class="card-title mb-0 font-extrabold"><strong>Martin</strong> <em>Kyrie from Mass for Double
+                        Choir</em></h2>
+                <h4 class="mt-2 mb-3">
+                    Recorded live in 2019, from the <a href="/performances/2019/musicfora-great-space/">Music for a
+                        Great Space</a> concert.
+                    </p>
+                </h4>
+            </div>
+
+        </div>
+    </a>
+
+</div>
+<div class="mb-5">
+    <a href="https://freemusicarchive.org/music/The_Tudor_Consort/single/gabrieli-jubilate-deo/" class="no-underline">
+
+        <div class="card  lg:card-side  bg-base-100 w-50 flex flex-col justify-between h-full">
+
+            {{ $image := .Resources.GetMatch "jubilate-deo.jpg" }}
+            {{ $image := $image.Process "fill 150x150 smart" }}
+            {{ with $image }}
+            <figure class="m-0">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+            </figure>
+            {{ end }}
+
+            <div class="card-body pt-0">
+                <h2 class="card-title mb-0 font-extrabold"><strong>Gabrieli</strong> <em>Jubilate Deo</em></h2>
+                <h4 class="mt-2 mb-3">
+                    Recorded live in 2019, from the <a href="/performances/2019/musicfora-great-space/">Music for a
+                        Great Space</a> concert.
+                    </p>
+                </h4>
+            </div>
+
+        </div>
+    </a>
+
+</div>
+
+<a href="https://freemusicarchive.org/music/The_Tudor_Consort/single/palestrina-beata-es-virgo-a-8/"
+    class="no-underline">
+
+    <div class="card  lg:card-side  bg-base-100 w-50 flex flex-col justify-between h-full">
+
+        {{ $image := .Resources.GetMatch "missa-papae.jpg" }}
+        {{ $image := $image.Process "fill 150x150 smart" }}
+        {{ with $image }}
+        <figure class="m-0">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+        </figure>
+        {{ end }}
+
+        <div class="card-body pt-0">
+            <h2 class="card-title mb-0 font-extrabold"><strong>Palestrina</strong> <em>Beata es Virgo a 8</em></h2>
+            <h4 class="mt-2 mb-3">
+                Recorded live in 2022, from the <a href="/performances/2022/missa-papae-marcelli/">Missa Papae
+                    Marcelli</a> concert.
+            </h4>
+        </div>
+
+    </div>
+</a>
+
+</ul>
+
+
+
+{{ end }}

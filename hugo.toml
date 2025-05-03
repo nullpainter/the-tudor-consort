@@ -9,7 +9,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 disableKinds = ["taxonomy"]
 
 [params]
-concertOffset = 1
+concertOffset = 0
 
 [[build.cachebusters]]
 source = 'layouts/.*'
