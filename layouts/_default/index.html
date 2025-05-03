@@ -22,7 +22,7 @@
 
     <main class="w-full home">
 
-        <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .Permalink }}'">
+        <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .RelPermalink }}'">
 
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}

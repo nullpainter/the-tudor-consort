@@ -10,7 +10,7 @@
 {{ $concertOffset := site.Params.concertOffset }}
 {{ $nearestFuturePage := index $performanceSeries $concertOffset }}
 
-{{ $isNextPerformance := eq .Permalink $nearestFuturePage.Permalink }}
+{{ $isNextPerformance := eq .RelPermalink $nearestFuturePage.RelPermalink }}
 {{ $currentSubscriptionSeries := eq $performanceYear $currentYear }}
 
 {{ $image := .Resources.GetMatch "hero-small.jpg" }}
@@ -86,9 +86,11 @@
         </div>
 
         {{ if .Params.ticketUrl }}
+        {{ if gt .Params.performanceDate now }}
         <a href="{{ .Params.ticketUrl }}">
             <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
         </a>
+        {{ end }}
         {{ end }}
 
         {{ else }}

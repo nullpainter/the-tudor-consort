@@ -15,7 +15,7 @@
 
     {{/* Render each concert for the current year */}}
     {{ range .Pages }}
-    <a href="{{ .Permalink }}" class="no-underline">
+    <a href="{{ .RelPermalink }}" class="no-underline">
         <div class="card bg-base-100 w-50 flex flex-col justify-between h-full">
             <div class="card-content flex-grow">
                 <h2 class="card-title mb-0 font-extrabold">{{ .Title }}</h2>
