@@ -11,9 +11,8 @@
                 <details>
                     <summary>{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</summary>
                     <ul>
-
                         {{ range .Children }}
-                        <li onclick="location.href='{{ .URL }}'">
+                        <li onclick="location.href='{{ .URL }}';window.event.stopPropogation();">
                             <a href="{{ .URL }}" class="tracking-tight">{{ replace .Name "{{ .Now.Year }}" (now.Format
                                 "2006")
                                 }}</a>

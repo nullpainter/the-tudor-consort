@@ -4,6 +4,8 @@
 
 nav {
     details {
+        z-index: 50;
+
         ul {
             min-width: 15rem;
 
@@ -14,7 +16,8 @@ nav {
 
 div.next-performance {
     font-size: 180%;
-
+    position: relative;
+    z-index: -50;
 
     h5 {
         font-size: 1.5rem;
