@@ -12,7 +12,23 @@
 
     <nav>
         {{ range $menuItems }}
+        {{ if .Children }}
+        {{ range .Children }}
         <a class="link link-hover" href="{{ .URL }}">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</a>
+
+        {{ $i = add $i 1 }}
+
+        {{ if eq (mod $i 3) 0 }}
+    </nav>
+    <nav>
+        {{ end }}
+
+        {{ end }}
+
+        {{ else }}
+        <a class="link link-hover" href="{{ .URL }}">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</a>
+        {{ end }}
+
         {{ $i = add $i 1 }}
 
         {{ if eq (mod $i 3) 0 }}
