@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+div.recording {
+    p {
+        margin: 0;
+    }
+}
+
 nav {
     details {
         z-index: 50;
 
         ul {
             min-width: 15rem;
-
         }
     }
 }
