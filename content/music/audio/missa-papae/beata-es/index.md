@@ -1,7 +1,7 @@
 +++
 title = "<em>Beata es Virgo a 8</em>"
 composer = "Giovanni Pierluigi da Palestrina"
-externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/beata-es-virgo-a-8-giovanni-pierluigi-da-palestrina/"
+externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/missa-papae-marcelli/beata-es-virgo-a-8-giovanni-pierluigi-da-palestrina/"
 year = 2022
 type = "audio"
 +++
