@@ -2,11 +2,11 @@
 {{ $earliestDate := first 1 (sort .Params.performanceDates) }}
 {{ $latestDate := last 1 (sort .Params.performanceDates) }}
 
-{{ (index $earliestDate 0) | dateFormat "Monday January 2"}} &mdash;
-{{ (index $latestDate 0) | dateFormat "Monday January 2"}}
+{{ (index $earliestDate 0) | dateFormat "Monday 2 January"}} &mdash;
+{{ (index $latestDate 0) | dateFormat "Monday 2 January"}}
 
 {{ else }}
 {{ if .Params.performanceDate }}
-{{ .Params.performanceDate | dateFormat "Monday January 2" }}
+{{ .Params.performanceDate | dateFormat "Monday 2 January" }}
 {{ end }}
 {{ end }}
