@@ -40,6 +40,9 @@
     <div class="mt-8">
         <h5 class=" mt-2 mb-2 font-semibold text-primary-content performance-date">
             {{ partial "performances/date-range.html" . }}
+            {{ if ne $performanceYear $currentYear }}
+            {{ $performanceYear }}
+            {{ end }}
         </h5>
 
         {{ if .Params.surTitle }}
