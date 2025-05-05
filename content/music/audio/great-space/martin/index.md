@@ -1,7 +1,7 @@
 +++
 title = "Kyrie from <em>Mass for Double Choir</em>"
 composer = "Frank Martin"
-externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/martin-kyrie/"
+externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/kyrie-frank-martin/"
 year = 2019
 type = "audio"
 +++

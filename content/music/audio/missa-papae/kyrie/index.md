@@ -1,7 +1,7 @@
 +++
 title = "Kyrie from <em>Missa Papae Marcelli</em>"
 composer = "Giovanni Pierluigi da Palestrina"
-externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/palestrina-kyrie-from-missa-papae-marcelli/"
+externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/kyrie-from-missa-papae-marcelli-giovanni-pierluigi-da-palestrina/"
 year = 2022
 type = "audio"
 +++

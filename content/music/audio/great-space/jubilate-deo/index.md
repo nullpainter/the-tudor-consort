@@ -1,7 +1,7 @@
 +++
 title = "<em>Jubilate Deo</em>"
 composer = "Giovanni Gabrieli"
-externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/gabrieli-jubilate-deo/"
+externalUrl = "https://freemusicarchive.org/music/The_Tudor_Consort/single/jubilate-deo-giovanni-gabrieli/"
 year = 2019
 type = "audio"
 +++
