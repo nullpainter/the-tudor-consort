@@ -13,14 +13,16 @@
     {{ partial "stores.html" . }}
 
     {{ $performanceSeries := site.Store.Get "performanceSeries" }}
+    {{ $futurePages := where $performanceSeries "Params.performanceDate" "gt" now }}
+
     {{ $concertOffset := site.Params.concertOffset }}
-    {{ $nearestFuturePage := index $performanceSeries $concertOffset }}
+    {{ $nearestFuturePage := index $futurePages $concertOffset }}
 
     {{ with $nearestFuturePage }}
 
     <main class="w-full home">
 
-        <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .Permalink }}' ;">
+        <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .RelPermalink }}'">
 
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $image := .Resources.GetMatch "hero.jpg" }}

@@ -4,12 +4,36 @@
     </a>
 
     <nav>
-        <ul class="menu menu-horizontal font-bold text-base">
+        <ul class="menu lg:menu-horizontal font-bold text-base">
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}" class="tracking-tight">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006")
-                    }}</a></li>
+            <li>
+                {{ if .Children }}
+                <details>
+                    <summary>{{ replace .Name "{{ .Now.Year }}" (now.Format "2006") }}</summary>
+                    <ul>
+                        {{ range .Children }}
+                        <li onclick="location.href='{{ .URL }}';window.event.stopPropogation();">
+                            <a href="{{ .URL }}" class="tracking-tight">{{ replace .Name "{{ .Now.Year }}" (now.Format
+                                "2006")
+                                }}</a>
+                        </li>
+
+                        {{ end}}
+                    </ul>
+                </details>
+
+                {{ else }}
+                <a href="{{ .URL }}" class="tracking-tight">{{ replace .Name "{{ .Now.Year }}" (now.Format "2006")
+                    }}</a>
+                {{ end }}
+
+            </li>
+
+
             {{ end }}
         </ul>
 
     </nav>
+
+
 </header>

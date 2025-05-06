@@ -1,6 +1,9 @@
----
-title: 'Performance archive'
-menu:
-  main:
-    weight: 23
----
++++
+title = "Past performances"
+layout = 'music/performances'
+
+[menu.main]
+  weight = 10
+  parent = 'Music'
+  url = '/performances'
++++

@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<h1>Audio</h1>
+
+<p class="mb-10">
+    All recordings of The Tudor Consort are hosted by the <a
+        href="https://freemusicarchive.org/music/The_Tudor_Consort/">Free Music Archive</a> and are licensed under
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution</a>, allowing
+    for download and both commercial and personal use, provided attribution is given.
+</p>
+
+<h2>Featured recordings</h2>
+
+{{ $recordings := where .Site.Pages "Type" "audio" }}
+{{ $recordings = sort $recordings "Params.year" "desc" }}
+
+{{ range $recordings}}
+<div class="recording">
+    <a href="{{ .Params.externalUrl }}" class="no-underline">
+
+        <div class="card lg:card-side  bg-base-100 w-50 flex flex-col justify-between h-full">
+
+            {{ $image := .Resources.GetMatch "hero.jpg" }}
+            {{ $image := $image.Process "fill 150x150 smart" }}
+            {{ with $image }}
+            <figure class="m-0">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="rounded-md">
+            </figure>
+            {{ end }}
+
+            <div class="card-body pt-0">
+                <h2 class="card-title mb-0 font-extrabold">{{ .Params.title | safeHTML }}</h2>
+                <h3>{{ .Params.composer }} </h3>
+                {{ .Content }}
+            </div>
+
+        </div>
+    </a>
+</div>
+{{ end }}
+
+{{ end }}

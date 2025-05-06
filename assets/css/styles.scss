@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+div.recording {
+    p {
+        margin: 0;
+    }
+}
+
+nav {
+    details {
+        z-index: 50;
+
+        ul {
+            min-width: 15rem;
+        }
+    }
+}
+
+
 div.next-performance {
     font-size: 180%;
-
+    position: relative;
+    z-index: 0;
 
     h5 {
         font-size: 1.5rem;

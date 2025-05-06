@@ -1,7 +1,9 @@
 {{ $performanceSeries := site.Store.Get "performanceSeries" }}
 
+{{ $futurePages := where $performanceSeries "Params.performanceDate" "gt" now }}
+
 {{ $concertOffset := site.Params.concertOffset }}
-{{ $nearestFuturePage := index $performanceSeries $concertOffset }}
+{{ $nearestFuturePage := index $futurePages $concertOffset }}
 
 {{ with $nearestFuturePage }}
 
@@ -13,7 +15,9 @@
 
 {{ $accentColour := .Store.Get "accentColour" }}
 
-<a href="{{ .Permalink }}" class="no-underline mb-20">
+
+
+<a href="{{ .RelPermalink }}" class="no-underline mb-20">
     <div class="relative next-performance">
 
         <div class="absolute mt-10 ms-6 me-6">
