@@ -9,7 +9,7 @@
     for download and both commercial and personal use, provided attribution is given.
 </p>
 
-<h2>Select recordings</h2>
+<h2>Featured recordings</h2>
 
 {{ $recordings := where .Site.Pages "Type" "audio" }}
 {{ $recordings = sort $recordings "Params.year" "desc" }}
