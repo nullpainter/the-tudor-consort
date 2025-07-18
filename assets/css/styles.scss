@@ -13,12 +13,12 @@ nav {
         z-index: 50;
 
         ul {
-            min-width: 10rem;
+            min-width: 15rem;
         }
     }
 
     li:last-child details ul,
-    li:nth-last-child(2) details ul {
+    li:nth-last-child(1) details ul {
         right: 0;
         left: auto;
     }
@@ -98,8 +98,8 @@ main.home {
     }
 
     .hero-image-gradient {
-        background: linear-gradient(to right,rgba(0,0,0,1) 0%,transparent 50%, transparent 100%)
-        /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)*/
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, transparent 50%, transparent 100%)
+            /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)*/
     }
 
     .hero-image {
