@@ -13,8 +13,14 @@ nav {
         z-index: 50;
 
         ul {
-            min-width: 15rem;
+            min-width: 10rem;
         }
+    }
+
+    li:last-child details ul,
+    li:nth-last-child(2) details ul {
+        right: 0;
+        left: auto;
     }
 }
 
