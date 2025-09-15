@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.prose {
+    blockquote {
+        font-weight: 400;
+    }
+}
+
 div.recording {
     p {
         margin: 0;

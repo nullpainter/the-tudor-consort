@@ -91,9 +91,11 @@
                 </div>
 
 
+                {{ if .Params.ticketUrl }}
                 <a href="{{ .Params.ticketUrl }}">
                     <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
                 </a>
+                {{ end }}
             </div>
 
 
