@@ -6,27 +6,115 @@
     To stay informed of upcoming concerts, please complete the following form.
 </p>
 
-<form action="https://formsubmit.co/776f1c4623030438f95a932fa659612c" method="POST"
-    class="max-w-lg p-4 shadow-md rounded-lg">
+<div id="mlb2-24363866" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-24363866">
+    <div class="ml-form-align-center">
+        <div class="ml-form-embedWrapper embedForm">
+            <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
+                <div class="ml-form-embedContent" style="margin-bottom: 0px;"></div>
 
-    {{/* May not be necessary; seems required on Chrome on Android */}}
-    <input type="hidden" name="_url" value="https://tudor-consort.org.nz/mailing-list">
+                <form class="ml-block-form max-w-lg p-4 shadow-md rounded-lg"
+                    action="https://assets.mailerlite.com/jsonp/1387795/forms/150527715200468491/subscribe" data-code=""
+                    method="post" target="_blank">
 
-    <div class="mb-4">
-        <label for="name" class="block text-sm font-medium text-gray-200">Name</label>
-        <input type="text" name="name" id="name" required autofocus
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    <div class="ml-form-formContent horozintalForm">
+                        <div class="ml-form-horizontalRow">
+                            <div class="ml-input-horizontal">
+                                <div class="horizontal-fields mb-4" style="width: 100%;">
+                                    <div class="ml-field-group ml-field-name">
+                                        <label class="block text-sm font-medium text-gray-200 mb-1">Name</label>
+                                        <input type="text"
+                                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+                                            data-inputmask="" name="fields[name]" placeholder="Name"
+                                            autocomplete="given-name">
+                                    </div>
+                                </div>
+
+                                <div class="horizontal-fields mb-4" style="width: 100%;">
+                                    <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                        <label class="block text-sm font-medium text-gray-200 mb-1">Email</label>
+                                        <input type="email"
+                                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+                                            data-inputmask="" name="fields[email]" placeholder="Email"
+                                            autocomplete="email">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ml-button-horizontal primary">
+                                <button type="submit"
+                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 w-full mb-4">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1">
+
+                    <div class="ml-mobileButton-horizontal">
+                        <button type="submit"
+                            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 w-full">Subscribe</button>
+                    </div>
+                    <input type="hidden" name="anticsrf" value="true">
+                </form>
+            </div>
+
+        </div>
     </div>
-    <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-200">Email</label>
-        <input type="email" name="email" id="email" required
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
-    </div>
-    <div>
-        <button type="submit"
-            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md
-             text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">Send</button>
-    </div>
-</form>
+</div>
+
+<!-- Keep minimal styles -->
+<style type="text/css">
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    .ml-error input,
+    .ml-error textarea,
+    .ml-error select {
+        border-color: red !important;
+    }
+
+    /* Hide mobile button by default, show desktop button */
+    .ml-mobileButton-horizontal {
+        display: none;
+    }
+
+    .ml-button-horizontal {
+        display: block;
+    }
+
+    /* On mobile screens, show mobile button and hide desktop button */
+    @media screen and (max-width: 480px) {
+        .ml-mobileButton-horizontal {
+            display: block;
+        }
+
+        .ml-button-horizontal {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    function ml_webform_success_24363866() {
+        var $ = ml_jQuery || jQuery;
+        $('.ml-subscribe-form-24363866 .row-success').show();
+        $('.ml-subscribe-form-24363866 .row-form').hide();
+
+        $('h1').text('Thank you!');
+        $('p').first().text('You have successfully joined our mailing list.');
+    }
+</script>
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"
+    type="text/javascript"></script>
+<script>
+    fetch("https://assets.mailerlite.com/jsonp/1387795/forms/150527715200468491/takel")</script>
 
 {{ end }}
