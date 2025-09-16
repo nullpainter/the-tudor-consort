@@ -47,6 +47,12 @@
                         </div>
                     </div>
 
+                    <div class="ml-form-recaptcha ml-validate-required mb-4">
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                        <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"
+                            data-theme="light"></div>
+                    </div>
+
                     <input type="hidden" name="ml-submit" value="1">
 
                     <div class="ml-mobileButton-horizontal">
@@ -61,7 +67,7 @@
     </div>
 </div>
 
-<!-- Keep minimal styles -->
+<!-- Keep minimal styles for reCAPTCHA -->
 <style type="text/css">
     .sr-only {
         position: absolute;
@@ -78,6 +84,14 @@
     .ml-error textarea,
     .ml-error select {
         border-color: red !important;
+    }
+
+    .ml-form-recaptcha {
+        text-align: left;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
     }
 
     /* Hide mobile button by default, show desktop button */
@@ -97,6 +111,11 @@
 
         .ml-button-horizontal {
             display: none;
+        }
+
+        .g-recaptcha {
+            transform: scale(0.77);
+            transform-origin: 0 0;
         }
     }
 </style>
