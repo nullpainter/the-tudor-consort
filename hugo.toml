@@ -10,6 +10,7 @@ disableKinds = ["taxonomy"]
 
 [params]
 concertOffset = 0
+currentYear = 2026
 
 [[build.cachebusters]]
 source = 'layouts/.*'
