@@ -10,6 +10,7 @@ Hill Street, Wellington
 """
 ticketUrl = "https://www.iticket.co.nz/events/2026/mar/anzfa-sound-cathedral"
 heroVerticalOffset = 160
+accentColour ="rgb(60 95 194)"
 +++
 
 We start the year with SoundCathedral, an immersive performance installation from composer-curator Michael Norris that will transform the Wellington Cathedral of St Paul into a living, breathing soundscape.
