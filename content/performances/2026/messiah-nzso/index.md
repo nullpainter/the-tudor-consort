@@ -11,4 +11,4 @@ Michael Fowler Centre
 ticketUrl = "https://www.nzso.co.nz/the-nzso/events-tickets/events/messiah-2026"
 +++
 
-We complete a very busy anniversary season with a special performance of Handel's Messiah with the NZSO, led the internationally-acclaimed conductor and virtuoso harpsichordist Erin Helyard. We will be joined by four international soloists: Samantha Clarke, Ashlyn Tymms, Kyle Stegall, and Andrew O'Connor.
+We complete a very busy anniversary season with a special performance of Handel’s _Messiah_ with the NZSO, led by the internationally-acclaimed conductor and virtuoso harpsichordist Erin Helyard. We will be joined by four international soloists:  Samantha Clarke, Ashlyn Tymms, Kyle Stegall, and Andrew O’Connor.

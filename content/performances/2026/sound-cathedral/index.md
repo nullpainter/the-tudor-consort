@@ -13,8 +13,8 @@ heroVerticalOffset = 160
 accentColour ="rgb(60 95 194)"
 +++
 
-We start the year with SoundCathedral, an immersive performance installation from composer-curator Michael Norris that will transform the Wellington Cathedral of St Paul into a living, breathing soundscape.
+We start the year with _SoundCathedral_, an immersive performance installation from composer-curator Michael Norris that will transform the Wellington Cathedral of St Paul into a living, breathing soundscape.
 
-This evocative concert weaves the ethereal polyphony of Orlando de Lassus with instrumental textures from acclaimed contemporary ensemble Stroma and taonga puoro collective the Rangatuone Ensemble, led by Dr Riki Pirihi.
+This evocative concert weaves the ethereal polyphony of Orlando de Lassus with instrumental textures from acclaimed contemporary ensemble Stroma and taonga pūoro collective the Rangatuone Ensemble, led by Dr Riki Pirihi.
 
 This will be The Tudor Consort's third appearance at the [Aotearoa Festival of the Arts](https://www.festival.nz/events/all/soundcathedral/).
