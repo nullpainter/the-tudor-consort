@@ -9,6 +9,7 @@ Michael Fowler Centre
 111 Wakefield St, Wellington
 """
 ticketUrl = "https://orchestrawellington.co.nz/event/oceans-2026"
+preconcertTalkTime = "Renouf Foyer, 6:30-7pm"
 +++
 
 Following on from our performance of _Requiem_ in November 2025, we are delighted to be involved in another premiere by Orchestra Wellington’s 2026 Composer-in-Residence, Victoria Kelly. Kelly made a transformative journey to the Antarctic as part of Antarctica New Zealand’s Community Engagement Programme. She was moved by the experience of living in an unimaginably beautiful and mysterious place, within a community of people who collaborate peacefully to better understand the world.
