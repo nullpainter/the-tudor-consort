@@ -4,7 +4,7 @@ subTitle = "With Orchestra Wellington"
 summary = ""
 performanceDate = 2026-05-30
 ticketUrl = "https://orchestrawellington.co.nz/event/wellington-2026"
-accentColour = "#c98080"
+accentColour = "#4a449f"
 performanceTime = "7:30pm"
 venue = """
 Michael Fowler Centre  

@@ -4,6 +4,12 @@ subTitle = "40 years of The Tudor Consort"
 summary = ""
 performanceDate = 2026-05-02
 heroImageOptions = "fill 1000x420 Center"
+performanceTime = "7:30pm"
+preconcertTalkTime = "7pm"
+venue = """
+Wellington Cathedral of St Paul  
+Hill Street, Wellington
+"""
 +++
 
 Our very first performance took place at Wellington Cathedral of St Paul on 23 April 1986. Our fortieth birthday celebration concert features Tudor music from that performance, alongside Thomas Tallis’ celebrated forty-part motet _Spem in allium_, 
