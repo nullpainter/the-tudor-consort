@@ -4,7 +4,7 @@ subTitle = "The Tudor Consort in Auckland"
 summary = ""
 performanceDate = 2026-08-30
 venue = """
-Holy Trinity Church  
+Holy Trinity  
 20 Church Street, Devonport  
 Auckland
 """
