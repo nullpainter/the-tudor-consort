@@ -4,7 +4,7 @@ subTitle = "The Tudor Consort in Auckland"
 summary = ""
 performanceDate = 2026-08-29
 accentColour = "#c39d69"
-heroImageOptions = "fill 1200x420 Center"
+heroImageOptions = "fill 900x420 Center"
 +++
 
 We are very much looking forward to performing in Auckland for the first time, and to join forces with Baroque specialists NZ Barok. Antonio Lotti’s well-known _Crucifixus a 8_ forms a part of his Credo in F - come and experience this wonderful work alongside _Let thy hand be strengthened_, one of Handel’s beloved Coronation Anthems. 
