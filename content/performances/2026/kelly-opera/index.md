@@ -5,7 +5,7 @@ summary = ""
 performanceDate = 2026-11-28
 performanceTime = "7:30pm"
 venue = """
-Michael Fowler Centre
+Michael Fowler Centre  
 111 Wakefield St, Wellington
 """
 ticketUrl = "https://orchestrawellington.co.nz/event/oceans-2026"
