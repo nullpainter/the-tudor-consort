@@ -1,0 +1,34 @@
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="prose">
+
+        <h1>The Tudor Consort&rsquo;s 40th Anniversary</h1>
+
+        <div class="flex justify-center">
+            <div class="text-center prose">
+                <span class="italic font-serif">
+                    &lsquo;This choir already occupies a unique position in our musical life after just one concert. May
+                    there soon be more.&rsquo;</span>&mdash;John
+                Button, The Dominion Post, April 1986
+            </div>
+        </div>
+
+        <p>
+            And as you can see from our <a href="performance-archive">performance archive</a> there certainly has been!
+        </p>
+        <p>
+            The Tudor Consort celebrates its 40th birthday in 2026 and we have an incredible season planned to
+            celebrate. Collaborations with five different ensembles, a debut in Auckland, three premiere performances,
+            and of
+            course a performance of Thomas Tallis’ 40 part masterpiece Spem in alium. Make sure you secure your tickets!
+        </p>
+    </div>
+    <div>
+        {{ $image := .Resources.GetMatch "home/40th.jpg" }}
+        {{ $image := $image.Process "fill 1200x750 smart" }}
+        {{ with $image }}
+        <img src="{{ .RelPermalink }}" alt="The Tudor Consort in performance" class="rounded-md"
+            width="{{ $image.Width }}" height="{{ $image.Height }}">
+        {{ end }}
+    </div>
+</div>
+<p>
