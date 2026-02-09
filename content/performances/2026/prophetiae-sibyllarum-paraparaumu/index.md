@@ -2,9 +2,10 @@
 title = "Prophetiae Sibyllarum"
 subTitle = "The Tudor Consort in Paraparaumu"
 performanceDate = 2026-08-15
+performanceTime = "3pm"
 venue = """
 St Paul’s Church  
-Paraparaumu
+1 Langdale Avenue, Paraparaumu
 """
 accentColour = "#aa7065"
 +++
