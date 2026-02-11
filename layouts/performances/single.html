@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $currentYear := now.Year }}
+{{ $currentYear := site.Params.currentYear }}
 
 {{ $performanceDate := .Store.Get "sortDate" | time }}
 {{ $performanceYear := $performanceDate.Year }}

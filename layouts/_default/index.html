@@ -12,6 +12,12 @@
 
     {{ partial "stores.html" . }}
 
+
+    {{/* 40th anniversary */}}
+    <div class="m-10 mt-32 mb-32">
+        {{ partial "home/40th-anniversary-section.html" . }}
+    </div>
+
     {{ $performanceSeries := site.Store.Get "performanceSeries" }}
     {{ $futurePages := where $performanceSeries "Params.performanceDate" "gt" now }}
 
@@ -28,7 +34,7 @@
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
             {{/* Hero image */}}
-            <div class="hero-image hero-image-gradient" style="grid-area: 1 / 1">
+            <div class="hero-image hero-image-gradient-home" style="grid-area: 1 / 1">
                 {{ if $image }}
 
                 {{ $heroBackground := "" }}
@@ -111,6 +117,8 @@
         <div class="m-10 mt-20 mb-20">
             {{ partial "home/about-section.html" . }}
         </div>
+
+
         {{/* Artistic director */}}
         <div class="m-10 mt-20">
             {{ partial "home/artistic-director-section.html" . }}

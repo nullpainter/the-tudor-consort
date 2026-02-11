@@ -104,8 +104,11 @@ main.home {
     }
 
     .hero-image-gradient {
-        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, transparent 50%, transparent 100%)
-            /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)*/
+        background: linear-gradient(to right, #040510 0%, transparent 90%);
+    }
+
+    .hero-image-gradient-home {
+        background: linear-gradient(to right, #040510 0%, #04051091 60%, transparent 90%);
     }
 
     .hero-image {
