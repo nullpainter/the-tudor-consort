@@ -10,6 +10,7 @@ venue = """
 Wellington Cathedral of St Paul  
 Hill Street, Wellington
 """
+ticketUrl = "https://events.humanitix.com/xl"
 +++
 
 Our very first performance took place at Wellington Cathedral of St Paul on 23 April 1986. Our fortieth birthday celebration concert features Tudor music from that performance, alongside Thomas Tallis’ celebrated forty-part motet _Spem in allium_, 

@@ -3,8 +3,15 @@ title = "Lotti and Handel with NZ Barok"
 subTitle = "The Tudor Consort in Auckland"
 summary = ""
 performanceDate = 2026-08-29
-accentColour = "#c39d69"
+accentColour = "#b5542d"
 heroImageOptions = "fill 900x420 Center"
+venue = """
+St Luke's Church   
+130 Remuera Road   
+Remuera   
+Auckland
+"""
+ticketUrl = "https://www.iticket.co.nz/events/2026/aug/barok-tudor-consort"
 +++
 
 We are very much looking forward to performing in Auckland for the first time, and to join forces with Baroque specialists NZ Barok. Antonio Lotti’s well-known _Crucifixus a 8_ forms a part of his Credo in F - come and experience this wonderful work alongside _Let thy hand be strengthened_, one of Handel’s beloved Coronation Anthems. 
