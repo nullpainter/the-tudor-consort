@@ -1,5 +1,5 @@
 +++
-title = "Stay in touch"
+title = "Mailing list"
 layout = "mailing-list"
 
 [menu.main]
