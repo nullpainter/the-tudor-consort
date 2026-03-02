@@ -34,7 +34,7 @@
 {{ end }}
 
 {{ $accentColour := .Store.Get "accentColour" }}
-{{ $buttonTextColour := default "var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)))" (.Store.Get "buttonTextColour") }}
+{{ $buttonTextColour := .Store.Get "buttonTextColour" }}
 
 <div class="next-performance">
 
