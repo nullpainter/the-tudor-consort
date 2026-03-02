@@ -34,6 +34,7 @@
 {{ end }}
 
 {{ $accentColour := .Store.Get "accentColour" }}
+{{ $buttonTextColour := default "#000000" (.Store.Get "buttonTextColour") }}
 
 <div class="next-performance">
 
@@ -91,7 +92,7 @@
         {{ if .Params.ticketUrl }}
         {{ if gt .Params.performanceDate now }}
         <a href="{{ .Params.ticketUrl }}">
-            <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
+            <button class="btn rounded-md mt-8 px-6" style="colour: {{ $buttonTextColour }}; background: {{ $accentColour }}">Book now</button>
         </a>
         {{ end }}
         {{ end }}
