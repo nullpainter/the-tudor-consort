@@ -1,0 +1,8 @@
+
+
+{{ range site.Pages }}
+
+{{ $buttonTextColour := default "var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)))" (.Params.buttonTextColour) }}
+{{ .Store.Set "buttonTextColour" $buttonTextColour }}
+
+{{ end }}
