@@ -31,6 +31,8 @@
         <div class="next-performance cursor-pointer grid" onclick="location.href='{{ .RelPermalink }}'">
 
             {{ $accentColour := .Store.Get "accentColour" }}
+            {{ $buttonTextColour := .Store.Get "buttonTextColour" }}
+            
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
             {{/* Hero image */}}
@@ -99,7 +101,7 @@
 
                 {{ if .Params.ticketUrl }}
                 <a href="{{ .Params.ticketUrl }}">
-                    <button class="btn rounded-md mt-8 px-6" style="background: {{ $accentColour }}">Book now</button>
+                    <button class="btn rounded-md mt-8 px-6" style="color: {{ $buttonTextColor }}; background: {{ $accentColour }}">Book now</button>
                 </a>
                 {{ end }}
             </div>
