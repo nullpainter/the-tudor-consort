@@ -6,7 +6,8 @@ performanceDate = 2026-05-02
 heroImageOptions = "fill 1000x420 Center"
 performanceTime = "7:30pm"
 preconcertTalkTime = "7pm"
-accentColour="#00d9ff;"
+accentColour="#00d9ff"
+buttonTextColour="#000000"
 venue = """
 Wellington Cathedral of St Paul  
 Hill Street, Wellington
