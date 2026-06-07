@@ -7,7 +7,6 @@ venue = """
 St Paul’s Church  
 1 Langdale Avenue, Paraparaumu
 """
-accentColour = "#aa7065"
 ticketUrl = "https://events.humanitix.com/sibyllarum-para/tickets"
 +++
 

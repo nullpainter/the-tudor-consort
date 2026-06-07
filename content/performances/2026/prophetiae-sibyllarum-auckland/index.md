@@ -8,7 +8,6 @@ Holy Trinity
 20 Church Street, Devonport  
 Auckland
 """
-accentColour = "#aa7065"
 ticketUrl = "https://events.humanitix.com/sibyllarum-akl/tickets"
 +++
 
