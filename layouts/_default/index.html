@@ -12,12 +12,6 @@
 
     {{ partial "stores.html" . }}
 
-
-    {{/* 40th anniversary */}}
-    <div class="m-10 mt-32 mb-32">
-        {{ partial "home/40th-anniversary-section.html" . }}
-    </div>
-
     {{ $performanceSeries := site.Store.Get "performanceSeries" }}
     {{ $futurePages := where $performanceSeries "Params.performanceDate" "gt" now }}
 
@@ -32,7 +26,7 @@
 
             {{ $accentColour := .Store.Get "accentColour" }}
             {{ $buttonTextColour := .Store.Get "buttonTextColour" }}
-            
+
             {{ $image := .Resources.GetMatch "hero.jpg" }}
 
             {{/* Hero image */}}
@@ -101,7 +95,8 @@
 
                 {{ if .Params.ticketUrl }}
                 <a href="{{ .Params.ticketUrl }}">
-                    <button class="btn rounded-md mt-8 px-6" style="color: {{ $buttonTextColour }}; background: {{ $accentColour }}">Book now</button>
+                    <button class="btn rounded-md mt-8 px-6"
+                        style="color: {{ $buttonTextColour }}; background: {{ $accentColour }}">Book now</button>
                 </a>
                 {{ end }}
             </div>
@@ -109,6 +104,13 @@
 
         </div>
         {{ end }}
+
+        {{/* 40th anniversary */}}
+        <div class="m-10 mt-32 mb-32">
+            {{ partial "home/40th-anniversary-section.html" . }}
+        </div>
+
+
 
         {{/* Plaudits */}}
         <div class="m-10 mt-32 mb-32">
