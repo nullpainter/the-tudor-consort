@@ -16,4 +16,4 @@ ticketUrl = "https://www.iticket.co.nz/events/2026/aug/barok-tudor-consort"
 
 We are very much looking forward to performing in Auckland for the first time, and to join forces with Baroque specialists NZ Barok. Antonio Lotti’s well-known _Crucifixus a 8_ forms a part of his Credo in F - come and experience this wonderful work alongside _Let thy hand be strengthened_, one of Handel’s beloved Coronation Anthems. 
 
-We will perform a [solo programme](../prophetiae-sibyllarum-auckland/) in Auckland featuring the wildly chromatic and forward-looking _Prophetiae Sibyllarum_ of Orlando de Lassus.
+We will perform a [solo programme](/performances/2026/prophetiae-sibyllarum-auckland/) in Auckland featuring the wildly chromatic and forward-looking _Prophetiae Sibyllarum_ of Orlando de Lassus.
